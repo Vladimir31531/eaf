@@ -1,0 +1,70 @@
+@import "../../../globalStyles";
+
+
+.dropBtn {
+    border: none;
+    background-color: transparent;
+}
+.css-fi1bin {
+    z-index: 10 !important;
+}
+.MuiPaper-elevation,
+.MuiMenu-list {
+    width: fit-content;
+    /* background-color: transparent !important; */
+    background-color: #fff !important;
+}
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+    width: 100%;
+}
+
+
+.header_dropdown {
+    width: fit-content;
+    padding: 5px*$vw 15px*$vw;
+    background-color: #fff;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+
+    gap: 10px*$vw;
+
+    span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px*$vw*0.8;
+        line-height: 22px*$vw*0.8;
+        color: #323232;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            color: #0AABC1;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .dropBtn {
+        border: none;
+        background-color: transparent;
+    }
+    .css-fi1bin {
+        z-index: 10 !important;
+    }
+    .MuiPaper-elevation,
+    .MuiMenu-list {
+        width: 100%;
+        background-color: transparent !important;
+    }
+    .MuiPaper-elevation {
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+        width: 100%;
+    }
+}

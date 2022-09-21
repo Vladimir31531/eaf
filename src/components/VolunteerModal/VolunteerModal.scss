@@ -1,0 +1,97 @@
+@import "../../globalStyles";
+
+
+
+.VolunteerModal {
+    width: 800px;
+    height: 90%;
+    background-color: #0AABC1;
+    border-radius: 43px*$vw;
+    position: relative;
+
+    @include flex(flex, row, nowrap, flex-start, center, unset);
+}
+.VolunteerModal_bgImg {
+    width: 423px*$vw;
+    height: 600px*$vw;
+    position: absolute;
+    left: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.VolunteerModal_content {
+    height: 600px*$vw;
+    padding: 50px*$vw 41px*$vw 100px*$vw 418px*$vw;
+
+    @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+    .title,
+    .alert {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px*$vw;
+        line-height: 39px*$vw;
+        color: #FFFFFF;
+        margin-bottom: 90px*$vw;
+    }
+    .alert {
+        font-size: 32px*$vw*0.7;
+        line-height: 39px*$vw*0.7;
+    }
+    form {
+
+        input,
+        textarea {
+            width: 262px*$vw;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            border-bottom: 1px*$vw solid #FFFFFF;
+            
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px*$vw;
+            line-height: 17px*$vw;
+            color: #FFFFFF;
+
+            &::placeholder {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px*$vw;
+                line-height: 17px*$vw;
+                color: #FFFFFF;
+            }
+        }
+        input {
+            height: 27px*$vw;
+            margin-bottom: 15px*$vw;
+        }
+        textarea {
+            height: 113px*$vw;
+            resize: none;
+            margin-bottom: 50px*$vw;
+        }
+        button {
+            padding: 7px*$vw 60px*$vw;
+            background: #FFFFFF;
+            border-radius: 34px*$vw;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px*$vw;
+            line-height: 17px*$vw;
+            color: #0AABC1;
+        }
+    }
+}
