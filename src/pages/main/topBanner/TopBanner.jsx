@@ -6,7 +6,7 @@ import "./topBanner.scss"
 
 export default function TopBanner() {
 
-    let [Slides, setSlides] = useState([])
+    /* let [Slides, setSlides] = useState([])
 
     useEffect(() => {
         let slides = []
@@ -17,6 +17,40 @@ export default function TopBanner() {
             })
             setSlides(arr)
         })
+    }, []) */
+
+
+    let slides = [
+        {
+            id: 1,
+            smallText: 'Help people 1',
+            title: 'Little Efforts Make Big Changes',
+            action: '/about',
+            bgImg: 'russia-ukraine-war.jpg',
+        },
+        {
+            id: 2,
+            smallText: 'Help people 2',
+            title: 'Little Efforts Make Big Changes',
+            action: '/about',
+            bgImg: 'russia-ukraine-war.jpg',
+        },
+        {
+            id: 3,
+            smallText: 'Help people 3',
+            title: 'Little Efforts Make Big Changes',
+            action: '/about',
+            bgImg: 'russia-ukraine-war.jpg',
+        },
+    ]
+
+    let [Slides, setSlides] = useState([])
+
+    useEffect(() => {
+        let arr = slides.map((slide) => {
+            return <Slide key={slide.id} slide={slide} />
+        })
+        setSlides(arr)
     }, [])
 
     return (
