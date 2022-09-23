@@ -34,9 +34,9 @@ function App() {
           <Route path={'/events'} element={<Events/>}/>
           <Route path={'/events/:id'} element={<SingleEvent/>}/>
           <Route path={'/news'} element={<News searchQuery={searchQuery} setsearchQuery={setsearchQuery} />}/>
-          <Route path={'/news/:id'} element={<SingleNew/>}/>
+          <Route path={'/news/:id'} element={<SingleNew setsearchQuery={setsearchQuery} />}/>
           <Route path={'/causes'} element={<Causes searchQuery={searchQuery} setsearchQuery={setsearchQuery} />}/>
-          <Route path={'/causes/:id'} element={<SingleCause/>}/>
+          <Route path={'/causes/:id'} element={<SingleCause setsearchQuery={setsearchQuery} />}/>
           <Route path={'/contacts'} element={<Contacts/>}/>
           <Route path={'/donate'} element={<Donate/>}/>
         </Routes>

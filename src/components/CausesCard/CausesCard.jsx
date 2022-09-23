@@ -28,7 +28,7 @@ export default function CausesCard({ cause }) {
                 </div>
                 <div className="slider">
                     <span className="range">
-                        <span className="raised" style={{ width: getRaisedIndex(cause.goal, cause.raised) * 377}}></span>
+                        <span className="raised" style={{ width: (getRaisedIndex(cause.goal, cause.raised) * 100) + '%' }}></span>
                         <div className="thumb"><span>{(getRaisedIndex(cause.goal, cause.raised) * 100).toFixed()}%</span></div>
                     </span>
                 </div>

@@ -2,7 +2,7 @@
 
 
 .breadcrumbs {
-    width: 1320px;
+    width: 1320px*$vw;
     margin: 0 auto;
     padding: 40px*$vw 0 10px*$vw 0;
     border-bottom: 0.5px*$vw solid #9D9B9B;
@@ -17,5 +17,24 @@
     }
     .crumb_curr {
         font-weight: 700;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .breadcrumbs {
+        width: 320px*$TELvw;
+        padding: 40px*$TELvw*0.8 0 10px*$TELvw*0.8 0;
+        border-bottom: 0.5px*$TELvw*0.8 solid #9D9B9B;
+
+        .crumb {
+            font-size: 14px*$TELvw*0.8;
+            line-height: 17px*$TELvw*0.8;
+        }
     }
 }

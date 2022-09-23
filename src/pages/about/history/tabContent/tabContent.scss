@@ -43,3 +43,43 @@
         color: #5C5C5C;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .tabContent {
+        padding: 20px*$TELvw;
+        border-radius: 25px*$vw;
+
+        @include flex(flex, column-reverse, nowrap, flex-start, center, unset);
+    }
+    .tabContent_img {
+        width: 385px*$TELvw*0.75;
+        height: 324px*$TELvw*0.75;
+        border-radius: 10px*$TELvw*0.75;
+        overflow: hidden;
+    }
+    .tabContent_text {
+        width: 100%;
+        margin-bottom: 20px*$TELvw;
+
+        .title {
+            font-size: 34px*$TELvw*0.6;
+            line-height: 41px*$TELvw*0.6;
+            margin-bottom: 48px*$TELvw*0.6;
+        }
+        .text {
+            font-size: 18px*$TELvw*0.6;
+            line-height: 33px*$TELvw*0.6;
+        }
+    }
+}

@@ -149,3 +149,108 @@
         height: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .SingleEvent {
+        width: 100%;
+        padding: 20px*$TELvw;
+
+        @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+    }
+    .SingleEvent_img {
+        width: 100%;
+        height: 270px*$TELvw;
+        border-radius: 10px*$vw;
+        overflow: hidden;
+        padding-bottom: 65px*$TELvw;
+        position: relative;
+        margin-bottom: 50px*$vw;
+    }
+    .SingleEvent_timer_w {
+        width: 90%;
+        height: auto;
+        padding: 30px*$TELvw*0.5 45px*$TELvw*0.5;
+        background: #FFFFFF;
+        box-shadow: 9px*$TELvw*0.5 11px*$TELvw*0.5 4px*$TELvw*0.5 rgba(128, 128, 128, 0.25);
+        border-radius: 10px*$TELvw*0.5;
+        position: absolute;
+        bottom: 15px*$TELvw*0.5;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 2;
+
+        @include flex(flex, column, nowrap, flex-start, center, unset);
+        gap: 10px*$TELvw;
+    }
+
+
+
+
+    .SingleEvent_content_w {
+        width: 100%;
+
+        @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+        h2 {
+            font-size: 34px*$TELvw*0.6;
+            line-height: 41px*$TELvw*0.6;
+            margin-bottom: 20px*$TELvw*0.6;
+        }
+    }
+    .SingleEvent_time {
+        gap: 30px*$vw;
+        margin-bottom: 20px*$TELvw*0.7;
+
+        .time {
+            width: fit-content;
+            margin-bottom: 7px*$TELvw*0.7;
+
+            .icon {
+                width: 21px*$TELvw*0.7;
+                height: 21px*$TELvw*0.7;
+                margin-right: 6px*$TELvw*0.7;
+            }
+            .text {
+                font-size: 16px*$TELvw*0.7;
+                line-height: 20px*$TELvw*0.7;
+                color: #0AABC1;
+            }
+        }
+    }
+    .SingleEvent_date {
+        padding: 10px*$TELvw*0.5 15px*$TELvw*0.5;
+        border-radius: 10px*$TELvw*0.5;
+
+        .num {
+            font-size: 20px*$TELvw*0.5;
+            line-height: 24px*$TELvw*0.5;
+            margin-right: 5px*$TELvw*0.5;
+        }
+        .month {
+            font-size: 20px*$TELvw*0.5;
+            line-height: 24px*$TELvw*0.5;
+        }
+    }
+
+
+    .SingleEvent_content_text {
+        font-size: 18px*$TELvw*0.7;
+        margin-bottom: 50px*$TELvw*0.7;
+    }
+
+    .SingleEvent_map {
+        width: 100%;
+        height: 300px*$TELvw;
+        margin-bottom: 30px*$TELvw;
+    }
+}

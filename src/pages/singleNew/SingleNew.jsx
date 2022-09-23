@@ -10,7 +10,7 @@ import Btn2 from '../../components/ui/btn2/Btn2'
 import { getDateByTimeStamp, getPopularNews, getPostByID, getShareLink } from '../../functions/helpers'
 import "./singleNew.scss"
 
-export default function SingleNew() {
+export default function SingleNew({ setsearchQuery }) {
     
     let params = useParams()
 
@@ -53,10 +53,17 @@ export default function SingleNew() {
         ])
     }, [params.id])
 
-    
+    let [openSidebar, setopenSidebar] = useState(false);
 
     return (
         <main className="main">
+            <div className="openSidebarBtn singleNewOpenSidebar" onClick={() => setopenSidebar(true)}>
+                <svg viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="10" width="6" height="2" rx="1" fill="#323232" />
+                    <rect x="2" y="5" width="10" height="2" rx="1" fill="#323232" />
+                    <rect width="14" height="2" rx="1" fill="#323232" />
+                </svg>
+            </div>
             <Breadcrumbs items={breadcrumbsItems} />
             
             <div className="SingleNew_w">
@@ -117,11 +124,31 @@ export default function SingleNew() {
                     <ShareLinks title={currNew.title}/>
                 </div>
 
-                <Sidebar
+                {(window.innerWidth > 500) ?
+                    <Sidebar
+                        news={news}
+                        categs={newsCategs}
+                        setsearchQuery={setsearchQuery}
+                        page={'news'}
+                        openSidebar={openSidebar}
+                        setopenSidebar={setopenSidebar}
+                    />
+                    : (openSidebar) &&
+                    <Sidebar
+                        news={news}
+                        categs={newsCategs}
+                        setsearchQuery={setsearchQuery}
+                        page={'news'}
+                        openSidebar={openSidebar}
+                        setopenSidebar={setopenSidebar}
+                    />
+                }
+
+                {/* <Sidebar
                     news={news}
                     categs={newsCategs}
                     page={'news'}
-                />
+                /> */}
             </div>
         </main>
     )

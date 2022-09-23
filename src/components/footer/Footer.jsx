@@ -5,7 +5,7 @@ import "./footer.scss"
 
 import Logo from "../../assets/img/footerLogo.svg"
 import { useSelector } from 'react-redux'
-import { getLatestNews } from '../../functions/helpers'
+import { getCuttedString, getLatestNews } from '../../functions/helpers'
 
 export default function Footer() {
 
@@ -133,7 +133,7 @@ export default function Footer() {
                     <img src={'../img/' + item.img} alt="" />
                   </div>
                   <div className="content">
-                    <h5 className="title">{item.title}</h5>
+                    <h5 className="title">{getCuttedString(item.title, 42)}</h5>
                     <Link to={'/news/' + item.id} className="button">
                       <Btn2 text={'Read More'} func={() => { }} />
                     </Link>

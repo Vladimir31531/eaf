@@ -61,3 +61,92 @@
     color: #323232;
     margin: 0 auto;
 }
+.openSidebarBtn {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .Causes_w {
+        width: 100%;
+        padding: 0 20px*$TELvw;
+        margin-top: 42px*$TELvw;
+        position: relative;
+
+        @include flex(flex, column, wrap, flex-start, center, unset);
+
+        h4 {
+            font-size: 34px*$TELvw*0.5;
+            line-height: 41px*$TELvw*0.5;
+            margin-bottom: 15px*$TELvw*0.5;
+        }
+        h3 {
+            font-size: 61px*$TELvw*0.5;
+            line-height: 74px*$TELvw*0.5;
+            margin-bottom: 50px*$TELvw*0.5;
+        }
+    }
+    .Causes_bgText {
+        font-size: 180px*$vw;
+        line-height: 219px*$vw;
+        top: 300px*$vw;
+    }
+
+    .CausesPage_2cols {
+        width: 100%;
+        margin-bottom: 30px*$TELvw;
+
+        @include flex(flex, row, nowrap, space-between, flex-start, unset);
+    }
+    .CausesPage_content {
+        width: 100%;
+        margin-bottom: 50px*$vw;
+
+        @include flex(flex, row, wrap, flex-start, flex-start, unset);
+
+        gap: 60px*$vw;
+
+        .Causes_card {
+            width: 48.2%;
+
+            .Causes_card_bottom {
+                flex-wrap: wrap;
+                gap: 10px*$vw;
+            }
+        }
+    }
+    .CausesPage_content_noPosts {
+        font-size: 36px*$TELvw*0.7*0.9;
+        line-height: 44px*$TELvw*0.7*0.9;
+    }
+
+
+
+    .openSidebarBtn {
+        display: block;
+        width: 16px*$TELvw;
+        height: 16px*$TELvw;
+        position: absolute;
+        right: 30px*$TELvw;
+        top: 60px*$TELvw;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}

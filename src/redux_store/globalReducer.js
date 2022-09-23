@@ -293,8 +293,8 @@ export const globalReducer = createSlice({
         events: [
             {
                 id: 1,
-                eventStart: 1663109046985, // Время начала события
-                eventEnd: 1663116246985, // Время окончания события
+                eventStart: 1673109046985, // Время начала события
+                eventEnd: 1673116246985, // Время окончания события
                 title: 'Sending humanitarian aid to Kyiv1',
                 excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
                 mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
@@ -302,8 +302,8 @@ export const globalReducer = createSlice({
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
             }, {
                 id: 2,
-                eventStart: 1663209046985,
-                eventEnd: 1663126246985,
+                eventStart: 1673209046985,
+                eventEnd: 1673126246985,
                 title: 'Sending humanitarian aid to Kyiv2',
                 excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
                 mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
@@ -311,8 +311,8 @@ export const globalReducer = createSlice({
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
             }, {
                 id: 3,
-                eventStart: 1663409046985,
-                eventEnd: 1663416246985,
+                eventStart: 1673409046985,
+                eventEnd: 1673416246985,
                 title: 'Sending humanitarian aid to Kyiv3',
                 excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
                 mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
@@ -320,8 +320,8 @@ export const globalReducer = createSlice({
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
             }, {
                 id: 4,
-                eventStart: 1663309046985,
-                eventEnd: 1663316246985,
+                eventStart: 1673309046985,
+                eventEnd: 1673316246985,
                 title: 'Sending humanitarian aid to Kyiv4',
                 excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
                 mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
@@ -329,8 +329,8 @@ export const globalReducer = createSlice({
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
             }, {
                 id: 5,
-                eventStart: 1663509046985,
-                eventEnd: 1663516246985,
+                eventStart: 1673509046985,
+                eventEnd: 1673516246985,
                 title: 'Sending humanitarian aid to Kyi5',
                 excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
                 mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
@@ -338,8 +338,8 @@ export const globalReducer = createSlice({
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
             }, {
                 id: 6,
-                eventStart: 1663609046985,
-                eventEnd: 1663616246985,
+                eventStart: 1673609046985,
+                eventEnd: 1673616246985,
                 title: 'Sending humanitarian aid to Kyiv6',
                 excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
                 mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
@@ -347,8 +347,8 @@ export const globalReducer = createSlice({
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
             }, {
                 id: 7,
-                eventStart: 1663609046985,
-                eventEnd: 1663616246985,
+                eventStart: 1673609046985,
+                eventEnd: 1673616246985,
                 title: 'Sending humanitarian aid to Kyiv7',
                 excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
                 mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',

@@ -14,11 +14,13 @@ export default function News() {
             <h4>our blog</h4>
             <h3>Latest news</h3>
             <div className="News_content">
-                {getLatestNews(news, 'newDate').map((item, i) => {
-                    if (i < 3) {
-                        return <NewsCard key={item.id} item={item} />
-                    }
-                })}
+                <div className="inner">
+                    {getLatestNews(news, 'newDate').map((item, i) => {
+                        if (i < 3) {
+                            return <NewsCard key={item.id} item={item} />
+                        }
+                    })}
+                </div>
             </div>
         </div>
     )

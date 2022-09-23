@@ -12,6 +12,33 @@ export default function Stats() {
 
     let [showModal, setshowModal] = useState(false)
 
+    let sx = (window.innerWidth > 500)
+        ?
+        {
+            '& .MuiPaper-root': {
+                maxWidth: 'fit-content',
+                borderRadius: '2.2395833333vw',
+
+                '&::-webkit-scrollbar': {
+                    display: 'none'
+                }
+            }
+        }
+        :
+        {
+            '& .MuiPaper-root': {
+                maxWidth: '85%',
+                maxHeight: '85%',
+                margin: 0,
+                marginRight: 'auto',
+                borderRadius: '3.2395833333vw',
+
+                '&::-webkit-scrollbar': {
+                    display: 'none'
+                }
+            }
+        }
+
     return (
         <div className="Stats">
             <div className="Stats_header">
@@ -19,14 +46,16 @@ export default function Stats() {
                 <h3>We provide help</h3>
             </div>
             <div className="Stats_w">
-                {stats.map((stat) => {
-                    return (
-                        <div key={stat.id} className="Stats_item">
-                            <span className="num">{stat.value}</span>
-                            <span className="text">{stat.title}</span>
-                        </div>
-                    )
-                })}
+                <div className="inner">
+                    {stats.map((stat) => {
+                        return (
+                            <div key={stat.id} className="Stats_item">
+                                <span className="num">{stat.value}</span>
+                                <span className="text">{stat.title}</span>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
             <button className="Stats_volunteer_btn" onClick={() => setshowModal(true)}>
                 <div className="plus">
@@ -41,16 +70,7 @@ export default function Stats() {
                 content={<VolunteerModal setshowModal={setshowModal} />}
                 show={showModal}
                 setshowModal={setshowModal}
-                sx={{
-                    '& .MuiPaper-root': {
-                        maxWidth: 'fit-content',
-                        borderRadius: '2.2395833333vw',
-
-                        '&::-webkit-scrollbar': {
-                            display: 'none'
-                        }
-                    }
-                }}
+                sx={sx}
             />
         </div>
     )

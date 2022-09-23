@@ -19,7 +19,7 @@
     img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
 }
 .Causes_card_donateBtn {
@@ -130,6 +130,91 @@
             font-size: 18px*$vw;
             line-height: 130.4%;
             color: #0AABC1;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .Causes_card {
+        width: 409px*$TELvw*0.6;
+        border-radius: 10px*$TELvw*0.6;
+    }
+    .Causes_card_img {
+        height: 276px*$TELvw*0.6;
+        margin-bottom: 50px*$TELvw*0.6;
+    }
+    .Causes_card_donateBtn {
+        right: 43px*$TELvw*0.6;
+        top: 257px*$TELvw*0.6;
+    }
+    .Causes_card_content {
+        padding: 0 13px*$TELvw*0.6 36px*$TELvw*0.6 13px*$TELvw*0.6;
+
+        h4 {
+            font-size: 22px*$TELvw*0.6;
+            line-height: 27px*$TELvw*0.6;
+            margin-bottom: 12px*$TELvw*0.6;
+        }
+        .text {
+            margin-bottom: 50px*$TELvw*0.6;
+
+            p {
+                font-size: 16px*$TELvw*0.6;
+            }
+        }
+        .slider {
+            width: 100%;
+            height: 32px*$TELvw*0.6;
+            margin-bottom: 16px*$TELvw*0.6;
+
+            .range {
+                width: 100%;
+                height: 2px*$TELvw*0.6;
+                border-radius: 2px*$TELvw*0.6;
+
+                .raised {
+                    min-width: 16px*$TELvw*0.6;
+                    max-width: 361px*$TELvw*0.6;
+                }
+                .thumb {
+
+                    span {
+                        width: 32px*$TELvw*0.6;
+                        height: 32px*$TELvw*0.6;
+                        padding: 9px*$TELvw*0.6 3px*$TELvw*0.6;
+
+                        top: -16px*$TELvw*0.6;
+                        left: -16px*$TELvw*0.6;
+
+                        font-size: 12px*$TELvw*0.6;
+                        line-height: 15px*$TELvw*0.6;
+                    }
+                }
+            }
+        }
+    }
+    .Causes_card_bottom {
+        width: 100%;
+        padding: 25px*$TELvw*0.6 13px*$TELvw*0.6;
+        border-top: 1px solid #BFBFBF;
+
+        .item {
+
+            .left {
+                font-size: 18px*$TELvw*0.6;
+                margin-right: 5px*$TELvw*0.6;
+            }
+            .right {
+                font-size: 18px*$TELvw*0.6;
+                line-height: 130.4%;
+            }
         }
     }
 }

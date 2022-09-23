@@ -16,11 +16,14 @@ export default function Causes() {
             <h4>our causes</h4>
             <h3>Popular Causes</h3>
             <div className="sectionCauses_w">
-                {causes.map((cause, i) => {
-                    if (i < 3) {
-                        return <CausesCard key={cause.id} cause={cause} />
-                    }
-                })}
+                <div className="inner">
+                    {causes.map((cause, i) => {
+                        if (i < 3) {
+                            return <CausesCard key={cause.id} cause={cause} />
+                        }
+                    })}
+                </div>
+                
             </div>
         </div>
     )

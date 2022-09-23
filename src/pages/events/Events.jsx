@@ -37,46 +37,89 @@ export default function Events() {
 
     let [paginationItems] = useCurrentPagePosts(currentPage, ItemsPerPage, sortedEvents)
 
-    let customPagesStyles = {
-        '& .MuiPagination-ul': {
-            gap: '0.9375vw'
-        },
-        '& .MuiPaginationItem-root.MuiPaginationItem-page': {
-            width: '2.0833333333vw',
-            height: '2.0833333333vw',
-            backgroundColor: '#B1B2B3',
-            borderRadius: '50%',
-            fontFamily: 'Montserrat',
-            fontStyle: 'normal',
-            fontWeight: 700,
-            fontSize: '1.0416666667vw',
-            lineHeight: '1.25vw',
-            textAlign: 'center',
-            color: '#FFFFFF',
-            /* margin: '0 0.27778vw', */
-            cursor: 'pointer',
-            transition: '0.3s',
-        },
-
-        '& .MuiPaginationItem-root.MuiPaginationItem-page.Mui-selected': {
-            backgroundColor: '#0AABC1',
-            color: '#fff',
-        },
-        '& .MuiPaginationItem-root.MuiPaginationItem-previousNext': {
-
-            width: '2.0833333333vw',
-            height: '2.0833333333vw',
-            backgroundColor: '#b1b2b36e',
-            borderRadius: '50%',
-
-            '& .MuiSvgIcon-root': {
-                width: '100%',
-                height: '100%',
+    let customPagesStyles = (window.innerWidth > 500)
+        ?
+        {
+            '& .MuiPagination-ul': {
+                gap: '0.9375vw'
+            },
+            '& .MuiPaginationItem-root.MuiPaginationItem-page': {
+                width: '2.0833333333vw',
+                height: '2.0833333333vw',
+                backgroundColor: '#B1B2B3',
                 borderRadius: '50%',
-                fill: '#fff',
+                fontFamily: 'Montserrat',
+                fontStyle: 'normal',
+                fontWeight: 700,
+                fontSize: '1.0416666667vw',
+                lineHeight: '1.25vw',
+                textAlign: 'center',
+                color: '#FFFFFF',
+                /* margin: '0 0.27778vw', */
+                cursor: 'pointer',
+                transition: '0.3s',
+            },
+
+            '& .MuiPaginationItem-root.MuiPaginationItem-page.Mui-selected': {
+                backgroundColor: '#0AABC1',
+                color: '#fff',
+            },
+            '& .MuiPaginationItem-root.MuiPaginationItem-previousNext': {
+
+                width: '2.0833333333vw',
+                height: '2.0833333333vw',
+                backgroundColor: '#b1b2b36e',
+                borderRadius: '50%',
+
+                '& .MuiSvgIcon-root': {
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '50%',
+                    fill: '#fff',
+                }
             }
         }
-    }
+        :
+        {
+            '& .MuiPagination-ul': {
+                gap: '0.9375vw'
+            },
+            '& .MuiPaginationItem-root.MuiPaginationItem-page': {
+                width: '8.0833333333vw',
+                height: '8.0833333333vw',
+                backgroundColor: '#B1B2B3',
+                borderRadius: '50%',
+                fontFamily: 'Montserrat',
+                fontStyle: 'normal',
+                fontWeight: 700,
+                fontSize: '3.0416666667vw',
+                lineHeight: '3.25vw',
+                textAlign: 'center',
+                color: '#FFFFFF',
+                /* margin: '0 0.27778vw', */
+                cursor: 'pointer',
+                transition: '0.3s',
+            },
+
+            '& .MuiPaginationItem-root.MuiPaginationItem-page.Mui-selected': {
+                backgroundColor: '#0AABC1',
+                color: '#fff',
+            },
+            '& .MuiPaginationItem-root.MuiPaginationItem-previousNext': {
+
+                width: '8.0833333333vw',
+                height: '8.0833333333vw',
+                backgroundColor: '#b1b2b36e',
+                borderRadius: '50%',
+
+                '& .MuiSvgIcon-root': {
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '50%',
+                    fill: '#fff',
+                }
+            }
+        }
 
     return (
         <main className="main">
@@ -94,7 +137,7 @@ export default function Events() {
                         <div className="CausesPage_content_noPosts">There is no events</div>
                     }
                 </div>
-                {(paginationItems.length > ItemsPerPage) &&
+                {(sortedEvents.length > ItemsPerPage) &&
                     <MuiPagination
                         pagesCount={pagesCount}
                         setPage={setcurrentPage}

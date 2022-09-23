@@ -47,7 +47,59 @@
 .sectionCauses_w {
     width: 100%;
 
-    @include flex(flex, row, wrap, flex-start, flex-start, unset);
+    .inner {
+        width: fit-content;
 
-    gap: 38px*$vw;
+        @include flex(flex, row, wrap, flex-start, flex-start, unset);
+
+        gap: 38px*$vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .Causes {
+        width: 100%;
+        padding: 0 20px*$TELvw;
+        margin: 50px*$TELvw 0;
+
+        &>h4 {
+            font-size: 34px*$TELvw*0.5;
+            line-height: 41px*$TELvw*0.5;
+            margin-bottom: 15px*$TELvw*0.5;
+        }
+        h3 {
+            font-size: 61px*$TELvw*0.5;
+            line-height: 74px*$TELvw*0.5;
+            margin-bottom: 33px*$TELvw*0.5;
+        }
+    }
+    .Causes_bgImg {
+        width: 1073px*$TELvw*0.2;
+        height: 932px*$TELvw*0.2;
+        position: absolute;
+        top: -90px*$TELvw*0.2;
+    }
+    .sectionCauses_w {
+        width: 100%;
+        overflow-x: auto;
+
+        .inner {
+            width: fit-content;
+
+            @include flex(flex, row, nowrap, flex-start, flex-start, unset);
+
+            gap: 20px*$TELvw;
+        }
+    }
 }

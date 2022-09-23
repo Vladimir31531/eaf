@@ -49,3 +49,35 @@
         margin-bottom: 50px*$vw;
     }
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .topBanner_slide {
+        height: 280px*$TELvw;
+    }
+    .topBanner_slide_content {
+        width: 80%;
+        left: 20px*$TELvw;
+
+        h4 {
+            font-size: 34px*$TELvw*0.5;
+            line-height: 41px*$TELvw*0.5;
+            margin-bottom: 15px*$TELvw*0.5;
+        }
+        h1 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 97px*$vw;
+            line-height: 118px*$vw;
+            color: #FFFFFF;
+            margin: 0;
+            margin-bottom: 50px*$vw;
+        }
+    }
+}

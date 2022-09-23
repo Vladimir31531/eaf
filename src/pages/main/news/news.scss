@@ -43,6 +43,50 @@
     width: 100%;
     margin-bottom: 21px*$vw;
 
-    @include flex(flex, row, wrap, flex-start, center, unset);
-    gap: 51px*$vw;
+    .inner {
+        width: fit-content;
+
+        @include flex(flex, row, wrap, flex-start, center, unset);
+
+        gap: 51px*$vw;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .News {
+        width: 100%;
+        padding: 0 20px*$TELvw;
+        position: relative;
+
+        &>h4 {
+            font-size: 34px*$TELvw*0.5;
+            line-height: 41px*$TELvw*0.5;
+            margin-bottom: 15px*$TELvw*0.5;
+        }
+        &>h3 {
+            font-size: 61px*$TELvw*0.5;
+            line-height: 74px*$TELvw*0.5;
+            margin-bottom: 50px*$TELvw*0.5;
+        }
+    }
+
+    .News_content {
+        width: 100%;
+        margin-bottom: 21px*$TELvw;
+        overflow-x: auto;
+
+        .inner {
+            width: fit-content;
+            gap: 18px*$TELvw;
+
+            @include flex(flex, row, nowrap, flex-start, center, unset);
+        }
+    }
 }

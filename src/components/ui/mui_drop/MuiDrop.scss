@@ -67,4 +67,21 @@
     .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
         width: 100%;
     }
+
+
+    .header_dropdown {
+        width: 100%;
+        padding: 5px*$TELvw 15px*$TELvw;
+        border-radius: 5px*$TELvw;
+        background-color: #fff;
+
+        @include flex(flex, column, nowrap, flex-start, center, unset);
+
+        gap: 10px*$vw;
+
+        span {
+            font-size: 18px*$TELvw*0.8;
+            line-height: 22px*$TELvw*0.8;
+        }
+    }
 }

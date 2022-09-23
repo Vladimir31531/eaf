@@ -1,10 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Btn2 from '../../../../components/ui/btn2/Btn2'
 import { getCuttedString, getDayMonth, getTimePeriod } from '../../../../functions/helpers';
 import "./eventsCard.scss"
 
 export default function EventsCard({small, event}) {
+
+    let location = useLocation()
 
     return (
         <>
@@ -27,7 +29,7 @@ export default function EventsCard({small, event}) {
                         </div>
                         <h5>{event.title}</h5>
                         <div className="text">
-                            <p>{getCuttedString(event.excerpt, 95)}</p>
+                            <p>{getCuttedString(event.excerpt, 85)}</p>
                         </div>
                     </div>
                 </div>
@@ -52,7 +54,7 @@ export default function EventsCard({small, event}) {
                         </div>
                         <h5>{event.title}</h5>
                         <div className="text">
-                            <p>{getCuttedString(event.mainText, 190)}</p>
+                            <p>{getCuttedString(event.mainText, ((location.pathname == '/events' && window.innerWidth <= 500) ? 85 : 290))}</p>
                         </div>
                     </div>
                     <div className="Events_card_btn">

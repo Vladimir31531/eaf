@@ -1,19 +1,14 @@
-import { useEffect, useState } from "react"
 
 export let useCurrentPagePosts = (currPage, itemsPerPage, items) => {
-    let [Arr, setArr] = useState([])
-    useEffect(() => {
-        let arr = []
-        let intMax = currPage * itemsPerPage
-        let intMin = intMax - itemsPerPage
-        items.map((prod, i) => {
-            if (i >= intMin && i < intMax) {
-                arr.push(items[i])
-            }
-        })
-        setArr([...arr])
-    }, [currPage, items])
-    return [Arr]
+    let arr = []
+    let intMax = currPage * itemsPerPage
+    let intMin = intMax - itemsPerPage
+    items.map((prod, i) => {
+        if (i >= intMin && i < intMax) {
+            arr.push(items[i])
+        }
+    })
+    return [arr]
 }
 
 export let getCuttedString = (str, limit) => {

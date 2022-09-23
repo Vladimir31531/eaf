@@ -50,3 +50,38 @@
         margin-left: 38px*$vw;
     }
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .TopBanner {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 50px*$TELvw;
+    }
+    .TopBanner_slider {
+        border-radius: 0;
+
+    }
+    .TopBanner_slider_dots {
+        bottom: 100px*$TELvw*0.2;
+        right: 191px*$TELvw*0.2;
+        gap: 15px*$TELvw;
+    }
+    .topBanner_dot {
+        width: 75px*$TELvw*0.3;
+        height: 75px*$TELvw*0.3;
+        border-radius: 7px*$TELvw*0.3;
+
+        span {
+            font-size: 48px*$TELvw*0.3;
+            line-height: 59px*$TELvw*0.3;
+            margin-left: 38px*$TELvw*0.3;
+        }
+    }
+}

@@ -10,7 +10,7 @@ import MuiAccordion from '../../components/ui/MuiAccordion/Accordion'
 import { getDateByTimeStamp, getPostByID, getRaisedIndex } from '../../functions/helpers'
 import "./singleCause.scss"
 
-export default function SingleCause() {
+export default function SingleCause({ setsearchQuery }) {
 
     let params = useParams()
 
@@ -59,8 +59,17 @@ export default function SingleCause() {
         }
     })
 
+    let [openSidebar, setopenSidebar] = useState(false);
+
     return (
         <main className="main">
+            <div className="openSidebarBtn" onClick={() => setopenSidebar(true)}>
+                <svg viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="10" width="6" height="2" rx="1" fill="#323232" />
+                    <rect x="2" y="5" width="10" height="2" rx="1" fill="#323232" />
+                    <rect width="14" height="2" rx="1" fill="#323232" />
+                </svg>
+            </div>
             <Breadcrumbs items={breadcrumbsItems} />
 
             <div className="SingleCause_w">
@@ -71,7 +80,7 @@ export default function SingleCause() {
                     </div>
                     <div className="slider">
                         <span className="range">
-                            <span className="raised" style={{ width: getRaisedIndex(currCause.goal, currCause.raised) * 924 }}></span>
+                            <span className="raised" style={{ width: (getRaisedIndex(currCause.goal, currCause.raised) * 100) + '%' }}></span>
                             <div className="thumb"><span>{(getRaisedIndex(currCause.goal, currCause.raised) * 100).toFixed()}%</span></div>
                         </span>
                     </div>
@@ -151,11 +160,31 @@ export default function SingleCause() {
                     <ShareLinks title={currCause.title} />
                 </div>
 
-                <Sidebar
+                {(window.innerWidth > 500) ?
+                    <Sidebar
+                        news={causes}
+                        categs={causesCategs}
+                        setsearchQuery={setsearchQuery}
+                        page={'causes'}
+                        openSidebar={openSidebar}
+                        setopenSidebar={setopenSidebar}
+                    />
+                    : (openSidebar) &&
+                    <Sidebar
+                        news={causes}
+                        categs={causesCategs}
+                        setsearchQuery={setsearchQuery}
+                        page={'causes'}
+                        openSidebar={openSidebar}
+                        setopenSidebar={setopenSidebar}
+                    />
+                }
+
+                {/* <Sidebar
                     news={causes}
                     categs={causesCategs}
                     page={'causes'}
-                />
+                /> */}
             </div>
         </main>
     )

@@ -25,3 +25,33 @@
         object-fit: contain;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .ShareLinks {
+        @include flex(flex, row, nowrap, flex-start, center, unset);
+
+        gap: 30px*$TELvw*0.7;
+
+        .title {
+            font-size: 18px*$TELvw*0.7;
+        }
+    }
+    .ShareLink {
+        width: 20px*$TELvw*0.7;
+        height: 20px*$TELvw*0.7;
+    }
+}
