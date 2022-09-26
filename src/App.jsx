@@ -17,6 +17,7 @@ import SingleCause from './pages/singleCause/SingleCause';
 import Contacts from './pages/contacts/Contacts';
 import Donate from './pages/donate/Donate';
 import Search from './pages/search/Search';
+import Page404 from './pages/page404/Page404';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
           <Route path={'/contacts'} element={<Contacts/>}/>
           <Route path={'/donate'} element={<Donate/>}/>
           <Route path={'/search'} element={<Search/>}/>
+          <Route path={'*'} element={<Page404/>}/>
         </Routes>
 
         <Footer />
