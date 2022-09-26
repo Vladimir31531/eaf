@@ -145,7 +145,81 @@
     display: none;
 }
 
+.search_w {
+    position: relative;
+}
+@keyframes showAnim {
+    0% {
+        top: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        top: 200%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@keyframes hideAnim {
+    0% {
+        top: 200%;
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        top: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+.header_searchForm {
+    width: fit-content;
+    padding: 20px*$vw;
+    border-radius: 10px*$vw;
+    background-color: #fff;
+    box-shadow: 7px*$vw 7px*$vw 15px*$vw #323232;
+    position: absolute;
+    top: 0%;
+    right: 0;
 
+    animation-name: hideAnim;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+
+    form {
+        @include flex(flex, row, nowrap, flex-start, center, unset);
+        gap: 20px*$vw;
+    }
+
+    input {
+        width: 262px*$vw;
+        height: 27px*$vw;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 1px*$vw solid #323232;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px*$vw;
+        line-height: 17px*$vw;
+        color: #323232;
+
+        &::placeholder {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px*$vw;
+            line-height: 17px*$vw;
+            color: #323232;
+        }
+    }
+}
+.header_searchForm_show {
+    animation-name: showAnim;
+    animation-duration: 0.3s;
+}
 
 
 
@@ -280,5 +354,38 @@
         div:last-child {
             transform: rotate(-45deg);
         }
+    }
+    .header_searchForm {
+        width: fit-content;
+        padding: 20px*$TELvw;
+        border-radius: 10px*$TELvw;
+        box-shadow: 7px*$TELvw 7px*$TELvw 15px*$TELvw #323232;
+        left: -120px*$TELvw;
+
+        animation-name: hideAnim;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+
+        form {
+            @include flex(flex, row, nowrap, flex-start, center, unset);
+            gap: 20px*$TELvw;
+        }
+
+        input {
+            width: 250px*$TELvw;
+            height: 27px*$TELvw;
+            border-bottom: 1px*$TELvw solid #323232;
+            font-size: 14px*$TELvw;
+            line-height: 17px*$TELvw;
+
+            &::placeholder {
+                font-size: 14px*$TELvw;
+                line-height: 17px*$TELvw;
+            }
+        }
+    }
+    .header_searchForm_show {
+        animation-name: showAnim;
+        animation-duration: 0.3s;
     }
 }

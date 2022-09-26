@@ -16,6 +16,7 @@ import CausesCard from './components/CausesCard/CausesCard';
 import SingleCause from './pages/singleCause/SingleCause';
 import Contacts from './pages/contacts/Contacts';
 import Donate from './pages/donate/Donate';
+import Search from './pages/search/Search';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
           <Route path={'/causes/:id'} element={<SingleCause setsearchQuery={setsearchQuery} />}/>
           <Route path={'/contacts'} element={<Contacts/>}/>
           <Route path={'/donate'} element={<Donate/>}/>
+          <Route path={'/search'} element={<Search/>}/>
         </Routes>
 
         <Footer />

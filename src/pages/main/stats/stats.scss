@@ -143,13 +143,14 @@
     .Stats_w {
         width: 100%;
         margin-bottom: 69px*$TELvw;
-        overflow-x: auto;
+        /* overflow-x: auto; */
         
         .inner {
-            height: 255px*$TELvw;
+            /* height: 255px*$TELvw; */
+            margin: 0 auto;
             gap: 30px*$TELvw;
 
-            @include flex(flex, column, wrap, flex-start, center, unset);
+            @include flex(flex, column, nowrap, flex-start, center, unset);
         }
     }
     .Stats_item {

@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import MuiDrop from '../ui/mui_drop/MuiDrop'
 import Btn1 from '../ui/btn1/Btn1'
 import "./header.scss"
 
 import Logo from "../../assets/img/Logo.svg"
 import { useDispatch, useSelector } from 'react-redux'
-import { setSelectedNewsCategs } from '../../redux_store/globalReducer'
+import { setglobalSearchQuery, setSelectedNewsCategs } from '../../redux_store/globalReducer'
 import { getClearPhone } from '../../functions/helpers'
 
 export default function Header() {
@@ -14,10 +14,25 @@ export default function Header() {
   let causesCategs = useSelector((state) => state.globalReducer.causesCategories)
   // let selectedCausesCategs = useSelector((state) => state.globalReducer.selectedCausesCategs)
   let mainInfo = useSelector((state) => state.globalReducer.mainInfo)
+  let globalSearchQuery = useSelector((state) => state.globalReducer.globalSearchQuery)
 
   let dispatch = useDispatch()
 
   let [openNav, setopenNav] = useState(false);
+
+  let [showSearchForm, setshowSearchForm] = useState(false)
+
+  let handleSearchForm = (e) => {
+    e.preventDefault()
+    dispatch(setglobalSearchQuery(e.target[0].value))
+  }
+
+  let navigate = useNavigate()
+  useEffect(() => {
+    if (globalSearchQuery) {
+      return navigate("/search")
+    }
+  }, [globalSearchQuery]);
 
   return (
     <div className="header">
@@ -168,12 +183,23 @@ export default function Header() {
         </nav>
         <div className="headerNav_donate">
           <div className="search_w">
-            <button className="search_btn">
+            <button className="search_btn" onClick={() => setshowSearchForm(!showSearchForm)}>
               <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="9.5" cy="9.5" r="8.5" stroke="#323232" strokeWidth="2" />
                 <line x1="15.7071" y1="16.2929" x2="23.7071" y2="24.2929" stroke="#323232" strokeWidth="2" />
               </svg>
             </button>
+            <div className={"header_searchForm " + ((showSearchForm) && "header_searchForm_show")}>
+              <form onSubmit={(e) => handleSearchForm(e)}>
+                <input type="text" placeholder="Type for search ..." />
+                <button className="search_btn">
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="9.5" cy="9.5" r="8.5" stroke="#323232" strokeWidth="2" />
+                    <line x1="15.7071" y1="16.2929" x2="23.7071" y2="24.2929" stroke="#323232" strokeWidth="2" />
+                  </svg>
+                </button>
+              </form>
+            </div>
           </div>
           <Link to={'/donate'}>
             <Btn1

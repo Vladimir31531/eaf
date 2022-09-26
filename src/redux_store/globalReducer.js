@@ -604,6 +604,7 @@ export const globalReducer = createSlice({
         // массив, затем происходит фильтрация новостей или донатов по наличию у них категорий из этого массива
         selectedNewsCategs: [],
         selectedCausesCategs: [],
+        globalSearchQuery: '',
     },
     reducers: {
         setSelectedNewsCategs: (state, action) => {
@@ -618,13 +619,17 @@ export const globalReducer = createSlice({
             } else {
                 state.selectedNewsCategs.push(action.payload)
             }
+        },
+        setglobalSearchQuery: (state, action) => {
+            state.globalSearchQuery = action.payload
         }
     }
 })
 
 
 export const {
-    setSelectedNewsCategs
+    setSelectedNewsCategs,
+    setglobalSearchQuery
 } = globalReducer.actions
 
 export default globalReducer.reducer
