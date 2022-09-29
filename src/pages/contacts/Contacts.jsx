@@ -10,11 +10,11 @@ export default function Contacts() {
     let [breadcrumbsItems, setbreadcrumbsItems] = useState([
         {
             slug: '/',
-            title: 'Home',
+            title: 'Главная',
         },
         {
             slug: '/contacts',
-            title: 'Contacts',
+            title: 'Контакты',
         },
     ])
 
@@ -25,18 +25,18 @@ export default function Contacts() {
             <Breadcrumbs items={breadcrumbsItems} />
             <div className="Contacts_w">
                 <div className="Contacts_bgText">Get in touch</div>
-                <h4>contacts</h4>
-                <h3>Get in touch with us</h3>
+                <h4>Контакты</h4>
+                <h3>Свяжись с нами</h3>
                 <div className="ContactsPage_content">
                     <div className="contacts_info">
                         <div className="item">
                             <div className="title">
                                 <div className="icon">
                                     <svg viewBox="0 0 35 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fillRule="evenodd" clipRule="evenodd" d="M7.97389 27.2033C5.89674 28.7462 3.81833 30.2896 1.74132 31.8326C0.847269 32.4962 0.574494 33.6893 1.09176 34.676C3.7188 39.6906 9.73698 41.724 14.796 39.0798C25.1553 33.6649 32.1554 24.5271 34.6873 13.1153C35.9236 7.54236 32.3935 2.26089 26.8679 1.02985C25.7806 0.787249 24.6996 1.36116 24.2903 2.39739C23.3425 4.80441 22.3934 7.21294 21.4444 9.61999C20.9996 10.7492 21.3022 11.9795 22.2206 12.7719C23.4236 13.8113 24.6263 14.8505 25.8291 15.8887C24.3151 21.6268 20.3141 26.8494 15.168 29.8049C13.8525 28.9139 12.536 28.0231 11.2192 27.1322C10.2139 26.4519 8.94819 26.4798 7.97397 27.2032L7.97389 27.2033Z" fill="#0AABC1" />
+                                        <path fillRule="evenodd" clipRule="evenodd" d="M7.97389 27.2033C5.89674 28.7462 3.81833 30.2896 1.74132 31.8326C0.847269 32.4962 0.574494 33.6893 1.09176 34.676C3.7188 39.6906 9.73698 41.724 14.796 39.0798C25.1553 33.6649 32.1554 24.5271 34.6873 13.1153C35.9236 7.54236 32.3935 2.26089 26.8679 1.02985C25.7806 0.787249 24.6996 1.36116 24.2903 2.39739C23.3425 4.80441 22.3934 7.21294 21.4444 9.61999C20.9996 10.7492 21.3022 11.9795 22.2206 12.7719C23.4236 13.8113 24.6263 14.8505 25.8291 15.8887C24.3151 21.6268 20.3141 26.8494 15.168 29.8049C13.8525 28.9139 12.536 28.0231 11.2192 27.1322C10.2139 26.4519 8.94819 26.4798 7.97397 27.2032L7.97389 27.2033Z" fill="#cc9955" />
                                     </svg>
                                 </div>
-                                <span>Phone</span>
+                                <span>Телефон</span>
                             </div>
                             <a href={"tel:" + getClearPhone(mainInfo.phone)}><span>{mainInfo.phone}</span></a>
                         </div>
@@ -44,8 +44,8 @@ export default function Contacts() {
                             <div className="title">
                                 <div className="icon">
                                     <svg viewBox="0 0 37 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M36.9999 4.62502L18.4999 13.8753L0 4.62502V0H36.9999V4.62502Z" fill="#0AABC1" />
-                                        <path d="M0 6.93799V27.7503H36.9999V6.93799L18.4999 16.1883L0 6.93799Z" fill="#0AABC1" />
+                                        <path d="M36.9999 4.62502L18.4999 13.8753L0 4.62502V0H36.9999V4.62502Z" fill="#cc9955" />
+                                        <path d="M0 6.93799V27.7503H36.9999V6.93799L18.4999 16.1883L0 6.93799Z" fill="#cc9955" />
                                     </svg>
                                 </div>
                                 <span>Email</span>
@@ -56,10 +56,10 @@ export default function Contacts() {
                             <div className="title">
                                 <div className="icon">
                                     <svg viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.5956 0.188477C5.24306 0.188477 0.09375 5.31145 0.09375 11.6296C0.09375 14.3074 1.00322 16.3742 3.10004 19.499C5.19516 22.6237 11.5956 31.1885 11.5956 31.1885C11.5956 31.1885 17.9963 22.6257 20.0875 19.499C22.186 16.3759 23.0938 14.3074 23.0938 11.6296C23.094 5.31145 17.9446 0.188477 11.5956 0.188477ZM11.5956 15.9554C9.1944 15.9554 7.24787 14.0188 7.24787 11.6298C7.24787 9.24434 9.1944 7.3043 11.5956 7.3043C13.9969 7.3043 15.9434 9.24427 15.9434 11.6298C15.9434 14.0188 13.9969 15.9554 11.5956 15.9554Z" fill="#0AABC1" />
+                                        <path d="M11.5956 0.188477C5.24306 0.188477 0.09375 5.31145 0.09375 11.6296C0.09375 14.3074 1.00322 16.3742 3.10004 19.499C5.19516 22.6237 11.5956 31.1885 11.5956 31.1885C11.5956 31.1885 17.9963 22.6257 20.0875 19.499C22.186 16.3759 23.0938 14.3074 23.0938 11.6296C23.094 5.31145 17.9446 0.188477 11.5956 0.188477ZM11.5956 15.9554C9.1944 15.9554 7.24787 14.0188 7.24787 11.6298C7.24787 9.24434 9.1944 7.3043 11.5956 7.3043C13.9969 7.3043 15.9434 9.24427 15.9434 11.6298C15.9434 14.0188 13.9969 15.9554 11.5956 15.9554Z" fill="#cc9955" />
                                     </svg>
                                 </div>
-                                <span>Adress</span>
+                                <span>Адрес</span>
                             </div>
                             <span>{mainInfo.address}</span>
                         </div>
@@ -72,15 +72,15 @@ export default function Contacts() {
                         <div className="form">
                             <form>
                                 <div className="row">
-                                    <span className="label">First name</span>
+                                    <span className="label">Имя</span>
                                     <input type="text" placeholder="ex. “John”" />
                                 </div>
                                 <div className="row">
-                                    <span className="label">Last name</span>
+                                    <span className="label">Фамилия</span>
                                     <input type="text" placeholder="ex. “Wik”" />
                                 </div>
                                 <div className="row">
-                                    <span className="label">Phone</span>
+                                    <span className="label">Телефон</span>
                                     <input type="text" placeholder="ex. “+90 300 156652”" />
                                 </div>
                                 <div className="row">
@@ -88,11 +88,11 @@ export default function Contacts() {
                                     <input type="text" placeholder="ex. “design@example.com”" />
                                 </div>
                                 <div className="row">
-                                    <span className="label">Message</span>
-                                    <textarea placeholder="Enter your message"></textarea>
+                                    <span className="label">Сообщение</span>
+                                    <textarea placeholder="Введите ваше сообщение"></textarea>
                                 </div>
                                 <div className="btn">
-                                    <Btn1 text={'Send message'} func={() => { }} />
+                                    <Btn1 text={'Отправить сообщение'} func={() => { }} />
                                 </div>
                             </form>
                         </div>

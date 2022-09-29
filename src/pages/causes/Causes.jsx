@@ -12,11 +12,11 @@ export default function Causes({ searchQuery, setsearchQuery }) {
     let breadcrumbsItems = [
         {
             slug: '/',
-            title: 'Home',
+            title: 'Главная',
         },
         {
             slug: '/causes',
-            title: 'Causes',
+            title: 'Программы',
         },
     ]
 

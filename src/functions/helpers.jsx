@@ -103,7 +103,7 @@ export let getSearchedNews = (arr, query) => {
         } else {
             let newContent = item.content
             for (let i = 0; i < newContent.length; i++) {
-                if (newContent[i].type == 'text' && newContent[i].text.toLowerCase().includes(query.toLowerCase())) {
+                if (newContent[i].type == 'text' && typeof newContent[i].text !== 'object' && newContent[i].text.toLowerCase().includes(query.toLowerCase())) {
                     arr2.push(item)
                     break;
                 }

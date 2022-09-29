@@ -18,7 +18,7 @@
         font-weight: 700;
         font-size: 22px*$vw;
         line-height: 27px*$vw;
-        color: #0AABC1;
+        color: #cc9955;
         margin-bottom: 20px*$vw;
     }
     .sidebar_block_content {
@@ -34,7 +34,7 @@
                 font-weight: 500;
                 font-size: 14px*$vw;
                 line-height: 17px*$vw;
-                color: #535353;
+                color: #fff;
                 margin-bottom: 12px*$vw;
             }
             button {
@@ -43,7 +43,7 @@
                 font-weight: 600;
                 font-size: 14px*$vw;
                 line-height: 130.4%;
-                color: #535353;
+                color: #fff;
             }
         }
     }
@@ -60,7 +60,8 @@
         background-color: transparent;
         border: none;
         outline: none;
-        border-bottom: 1px*$vw solid #535353;
+        border-bottom: 1px*$vw solid #fff;
+        color: #fff;
 
         &::placeholder {
             font-family: 'Montserrat';
@@ -68,7 +69,7 @@
             font-weight: 400;
             font-size: 14px*$vw;
             line-height: 17px*$vw;
-            color: #535353;
+            color: #fff;
         }
     }
     button {
@@ -86,7 +87,7 @@
         font-weight: 400;
         font-size: 14px*$vw;
         line-height: 17px*$vw;
-        color: #535353;
+        color: #fff;
 
         @include flex(flex, row, nowrap, center, center, unset);
 
@@ -97,7 +98,7 @@
             
             path,
             line {
-                stroke: #323232;
+                stroke: #fff;
             }
         }
     }
@@ -119,20 +120,20 @@
         font-weight: 500;
         font-size: 18px*$vw;
         line-height: 22px*$vw;
-        color: #535353;
+        color: #fff;
 
         &:hover {
-            color: #0AABC1;
+            color: #fff;
 
             &::before {
-                color: #0AABC1;
+                color: #fff;
             }
         }
 
         &::before {
             content: '\203A';
             font-size: 25px*$vw;
-            color: #535353;
+            color: #fff;
             margin-right: 7px*$vw;
             margin-bottom: 7px*$vw;
         }

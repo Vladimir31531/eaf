@@ -11,11 +11,11 @@ export default function Events() {
     let breadcrumbsItems = [
         {
             slug: '/',
-            title: 'Home',
+            title: 'Главная',
         },
         {
             slug: '/events',
-            title: 'Events',
+            title: 'События',
         },
     ]
 

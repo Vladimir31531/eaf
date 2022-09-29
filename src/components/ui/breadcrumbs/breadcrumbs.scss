@@ -5,7 +5,7 @@
     width: 1320px*$vw;
     margin: 0 auto;
     padding: 40px*$vw 0 10px*$vw 0;
-    border-bottom: 0.5px*$vw solid #9D9B9B;
+    border-bottom: 0.5px*$vw solid #fff;
 
     .crumb {
         font-family: 'Montserrat';
@@ -13,7 +13,7 @@
         font-weight: 500;
         font-size: 14px*$vw;
         line-height: 17px*$vw;
-        color: #9D9B9B;
+        color: #fff;
     }
     .crumb_curr {
         font-weight: 700;
