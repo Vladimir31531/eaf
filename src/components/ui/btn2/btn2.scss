@@ -26,7 +26,10 @@
 
 @media screen and (max-width: 500px) {
     .btn2 {
-        border-bottom: 2px*$TELvw*0.9 solid #0AABC1;
+        border-bottom: 2px*$TELvw*0.9 solid #cc9955;
         font-size: 18px*$TELvw*0.9;
+    }
+    .Causes_card_content .btn2 {
+        color: #323232;
     }
 }
