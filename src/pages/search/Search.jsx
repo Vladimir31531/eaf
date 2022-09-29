@@ -24,11 +24,11 @@ export default function Search() {
     let breadcrumbsItems = [
         {
             slug: '/',
-            title: 'Home',
+            title: 'Главная',
         },
         {
             slug: '',
-            title: 'Search Query: ' + '"' + globalSearchQuery + '"',
+            title: 'Поисковой запрос: ' + '"' + globalSearchQuery + '"',
         },
     ]
 
@@ -42,7 +42,7 @@ export default function Search() {
         news.forEach(e => {
             let Str = e.author.Name.toLowerCase() + ' ' + e.title.toLowerCase() + ' '
             e.content.forEach(item => {
-                if (item.type === 'text') {
+                if (item.type === 'text' && typeof item.text !== 'object') {
                     Str = Str + item.text.toLowerCase() + ' '
                 }
             });
@@ -63,7 +63,7 @@ export default function Search() {
         causes.forEach(e => {
             let Str = e.title.toLowerCase() + ' ' + e.text.toLowerCase() + ' '
             e.content.forEach(item => {
-                if (item.type === 'text') {
+                if (item.type === 'text' && typeof item.text !== 'object') {
                     Str = Str + item.text.toLowerCase() + ' '
                 } else if (item.type === 'question') {
                     Str = Str + item.text.toLowerCase() + ' ' + item.question.toLowerCase() + ' '
@@ -184,8 +184,8 @@ export default function Search() {
         <main className="main">
             <Breadcrumbs items={breadcrumbsItems} />
             <div className="Events_w">
-                <div className="Events_bgText">Search Query</div>
-                <h4>Search Query Results</h4>
+                {/* <div className="Events_bgText">Поисковой запрос</div> */}
+                <h4>Результаты поиска</h4>
                 {/* <h3>Our Events</h3> */}
                 <div className="EventsPage_content search_wrapper">
                     {(paginationItems.length > 0) ?
@@ -199,7 +199,7 @@ export default function Search() {
                             }
                         })
                         :
-                        <div className="CausesPage_content_noPosts">Nothing found</div>
+                        <div className="CausesPage_content_noPosts">Ничего не найдено</div>
                     }
                 </div>
                 {(searchedItems.length > ItemsPerPage) &&
