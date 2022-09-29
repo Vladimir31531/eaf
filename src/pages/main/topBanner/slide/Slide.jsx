@@ -10,9 +10,9 @@ export default function Slide({slide}) {
             <img src={'./img/' + slide.bgImg } alt="" />
             <div className="topBanner_slide_dark"></div>
             <div className="topBanner_slide_content">
-                {(slide.smallText) && <h4>{slide.smallText}</h4>}
                 <h1>{slide.title}</h1>
-                {(slide.action) && <Link to={slide.action}><Btn1 text={'learn more'} func={() => { }} /></Link>}
+                {(slide.smallText) && <h4>{slide.smallText}</h4>}
+                {(slide.action) && <Link to={slide.action}><Btn1 text={'Поддержать нас'} func={() => { }} /></Link>}
             </div>
         </div>
     )

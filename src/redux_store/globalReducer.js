@@ -7,7 +7,7 @@ export const globalReducer = createSlice({
     initialState: {
         // Объект с основной информацией фонда
         mainInfo: {
-            footerText: 'Charitable giving is the act of giving money, goods or time to the unfortunate, either directly or by means of a charitable trust or other worthy cause. Charitable giving as a religious act or duty is referred to as almsgiving or alms.',
+            footerText: 'В этом разделе вы найдете информацию о наших контактах. Вы всегда можете написать или позвонить, если вам нужна помощь или вы хотите оставить предложение и пожелания. Ждем от вас звонков и обратной связи. ',
             phone: '+46-766-92-00-94',
             email: 'eaf.fond@help.com',
             address: 'London, 45 Maydwell House',
@@ -36,18 +36,18 @@ export const globalReducer = createSlice({
             mission: [
                 {
                     id: 1,
-                    images: ['aboutSectionImg1.jpg', 'aboutSectionImg2.jpg'],
-                    smallTitle: 'mission',
-                    bigTitle: 'Our mission',
-                    text: 'We can\'t achieve our goals on our own.We work together with businesses, government, and nonprofits, and each partner plays a specific role in accelerating progress. In many cases, the private and public sectors, acting either separately or together, meet people’s needs.But there are gaps, spaces where some people don’t get what they need to live healthy, productive lives.',
+                    images: ['about_eaf.jpeg'],
+                    smallTitle: 'О нас',
+                    bigTitle: 'ИНФОРМАЦИЯ О ФОНДЕ',
+                    text: <><span>Европейский фонд помощи был основан 22 июня 2022г. в городе Юрмала.</span><br/><span>Наша команда молодых энергичных людей, которым не чуждо чувство сострадания и отзывчивости. Благотворительный фонд реализует собственные проекты, принимает участие в финансировании волонтеров — единомышленников, которые так же как и мы понимают, что дети — это наше будущие.</span></>,
                 },
-                {
+                /* {
                     id: 2,
                     video: 'video1.mp4',
                     text: 'We can\'t achieve our goals on our own.We work together with businesses, government, and nonprofits, and each partner plays a specific role in accelerating progress. In many cases, the private and public sectors, acting either separately or together, meet people’s needs.But there are gaps, spaces where some people don’t get what they need to live healthy, productive lives.',
-                },
+                }, */
             ],
-            history: [
+            /* history: [
                 {
                     year: '2008',
                     img: 'newsIMG.jpg',
@@ -78,11 +78,11 @@ export const globalReducer = createSlice({
                     title: 'First cause after registration.2022',
                     text: 'We can\'t achieve our goals on our own.We work together with businesses, government, and nonprofits, and each partner plays a specific role in accelerating progress.In many cases, the private and public sectors, acting either separately or together, meet people’s needs.But there are gaps, spaces where some people don’t get what they need to live healthy, productive lives. We can\'t achieve our goals on our own. We work together with businesses, In many cases, the private and public sectors, acting either separately or together, meet people’s needs. But there are gaps, spaces where some people don’t get what they need to live healthy, productive lives. We can\'t achieve our goals on our own. We work together with businesses, ',
                 },
-            ]
+            ] */
         },
         // Массив со всеми новостями
         news: [
-            {
+            /* {
                 id: 1,
                 img: 'newsIMG.jpg',
                 author: {
@@ -287,11 +287,11 @@ export const globalReducer = createSlice({
                         text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
                     },
                 ],
-            },
+            }, */
         ],
         // Массив со всеми событиями
         events: [
-            {
+            /* {
                 id: 1,
                 eventStart: 1673109046985, // Время начала события
                 eventEnd: 1673116246985, // Время окончания события
@@ -354,11 +354,11 @@ export const globalReducer = createSlice({
                 mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
                 img: 'eventImg.jpg',
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
-            },
+            }, */
         ],
         // Массив для блока со статистикой
         stats: [
-            {
+            /* {
                 id: 1,
                 title: 'Happy People',
                 value: '1350 +',
@@ -372,15 +372,15 @@ export const globalReducer = createSlice({
                 id: 3,
                 title: 'Implemented Сompanies',
                 value: '370 +',
-            },
+            }, */
         ],
         // Массив со всеми донатами
         causes: [
             {
                 id: 1,
-                img: 'causeImg.jpg',
-                title: 'Restoration of Ukraine1',
-                text: 'Ukraine suffered a lot from the war, in order to help it, we opened a collection, the money of which will be used to rebuild cities',
+                img: 'standWithUkraine.jpg',
+                title: '#Stand with UKRAINE',
+                text: 'В связи с военными действиями в Украине и сопровождающими их гуманитарными проблемами члены Фонда решили разработать гуманитарную Программу «Stand with Ukraine»',
                 goal: 100,
                 raised: 80,
                 supporter: 8215,
@@ -390,22 +390,63 @@ export const globalReducer = createSlice({
                     {
                         // Если текстовый блок то type text
                         type: 'text',
-                        text: 'Lorem7 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
+                        text: 'В связи с военными действиями в Украине и сопровождающими их гуманитарными проблемами члены Фонда решили разработать гуманитарную Программу «Stand with Ukraine» Бенефициары Программы «Stand with Ukraine»:',
                     },
-                    {
+                    /* {
                         // Если блок с картинками то type img
                         type: 'img',
                         imgs: ['aboutSectionImg1.jpg', 'aboutSectionImg2.jpg']
+                    }, */
+                    {
+                        type: 'text',
+                        text: 
+                        <ul>
+                            <li>Дети сироты;</li>
+                            <li>Дети с особенными потребностями;</li>
+                            <li>Дети, у которых в живых остался один родитель;</li>
+                            <li>Дети из малообеспеченных семей;</li>
+                            <li>Внутренне перемещённые лица;</li>
+                            <li>Малообеспеченные жители Украины, которые выехали в страны Европейского Союза после 24.02 .2022 r.</li>
+                        </ul>,
                     },
                     {
                         type: 'text',
-                        text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
+                        text: 'Помощь бенефициарам. Фонд планирует оказывать адресную помощь на территории всей Украины бенефициарам программы« Stand with Ukraine», от которых поступили запросы на предоставление гуманитарной, финансовой помощи Представители Фонда находятся в таких городах Украины, как Киев, Сумы, Тернополь, Винница. По мере развития программы« Stand with Ukraine» география присутствия Фонда в Украине может расширятся.В связи с развитостью почтовых сервисов в Украине Фонд может оказывать помощь даже в тех городах, где нет представителей Фонда. ',
                     },
                     {
                         type: 'text',
-                        text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
+                        text: 'Помощь учреждениям Представители Фонда будут фиксировать повреждения школ, детских домов, которые пострадали вследствие военных действий в Украине, для осмотра и дальнейшего оказания помощи. ',
                     },
                     {
+                        type: 'text',
+                        text: 'Фонд может открывать сбор и привлекать средства на реконструкцию школ, детских домов и других объектов. Программа Фонда «Европейский фонд помощи» Stand with Ukraine',
+                    },
+                    {
+                        type: 'text',
+                        text: 'Фонд «Европейский фонд помощи» (далее — Фонд) согласно устава создан выполнять следующие цели:',
+                    },
+                    {
+                        type: 'text',
+                        text: 
+                        <ul>
+                            <li>Оказание гуманитарной помощи жертвам войны и стихийных бедствий;</li>
+                            <li>Обеспечение расширения образовательных возможностей и доступности информационных технологий;</li>
+                            <li>Оказание помощи онкобольным:</li>
+                            <li>Оказание гуманитарной помощи пострадавшим от войны и стихийных бедствий в Украине;</li>
+                            <li>Поддержание обеспечения лекарствами нуждающихся;</li>
+                            <li>Оказание помощи в эвакуации животных;</li>
+                            <li>Сбор пакетов помощи;</li>
+                            <li>Обеспечение поддержки для сбора на транспортные средств помощи;</li>
+                            <li>Оказание помощи в предоставлении временного жилья;</li>
+                            <li>Оказание помощи в эвакуации мирных жителей.</li>
+                            <li>Оказание поддержки проектам NFT.</li>
+                            <li>Оказание поддержки в организации культурных мероприятий;</li>
+                            <li>Оказание поддержки в организации мероприятий по укреплении здоровья;</li>
+                            <li>Поддержка организации спортивных мероприятий.</li>
+                        </ul>,
+                    },
+
+                    /* {
                         // Если блок с вопросом в аккордеоне то type question
                         type: 'question',
                         question: 'Do you give to charity or volunteer?',
@@ -420,13 +461,13 @@ export const globalReducer = createSlice({
                         type: 'question',
                         question: 'Do you give to charity or volunteer?',
                         text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need.',
-                    },
+                    }, */
                 ],
             }, {
                 id: 2,
-                img: 'causeImg.jpg',
-                title: 'Restoration of Ukraine2',
-                text: 'Ukraine suffered a lot from the war, in order to help it, we opened a collection, the money of which will be used to rebuild cities',
+                img: 'supportInEurope.jpg',
+                title: 'Помощь переселенцам в Европе',
+                text: 'Программа находится в разработке. Но Вы можете ознакомится с нашими другими программами и поддержать их.',
                 goal: 16500,
                 raised: 12000,
                 supporter: 8215,
@@ -435,9 +476,9 @@ export const globalReducer = createSlice({
                 content: [
                     {
                         type: 'text',
-                        text: 'Lorem7 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
+                        text: 'Вы можете поддержать наши другие программы нажав на кнопку "Поддержать".',
                     },
-                    {
+                    /* {
                         type: 'img',
                         imgs: ['aboutSectionImg1.jpg', 'aboutSectionImg2.jpg']
                     },
@@ -461,90 +502,9 @@ export const globalReducer = createSlice({
                         type: 'question',
                         question: 'Do you give to charity or volunteer?',
                         text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need.',
-                    },
+                    }, */
                 ],
-            }, {
-                id: 3,
-                img: 'causeImg.jpg',
-                title: 'Restoration of Ukraine3',
-                text: 'Ukraine suffered a lot from the war, in order to help it, we opened a collection, the money of which will be used to rebuild cities',
-                goal: 1000000,
-                raised: 483000,
-                supporter: 8215,
-                donators: 80560,
-                categories: ['charity'],
-                content: [
-                    {
-                        type: 'text',
-                        text: 'Lorem7 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
-                    },
-                    {
-                        type: 'img',
-                        imgs: ['aboutSectionImg1.jpg', 'aboutSectionImg2.jpg']
-                    },
-                    {
-                        type: 'text',
-                        text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
-                    },
-                    {
-                        type: 'text',
-                        text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
-                    },
-                    {
-                        type: 'question',
-                        question: 'Do you give to charity or volunteer?',
-                        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need.',
-                    }, {
-                        type: 'question',
-                        question: 'Do you give to charity or volunteer?',
-                        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need.',
-                    }, {
-                        type: 'question',
-                        question: 'Do you give to charity or volunteer?',
-                        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need.',
-                    },
-                ],
-            }, {
-                id: 4,
-                img: 'causeImg.jpg',
-                title: 'Restoration of Ukraine4',
-                text: 'Ukraine suffered a lot from the war, in order to help it, we opened a collection, the money of which will be used to rebuild cities',
-                goal: 1000000,
-                raised: 483000,
-                supporter: 8215,
-                donators: 80560,
-                categories: ['charity'],
-                content: [{
-                        type: 'text',
-                        text: 'Lorem7 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
-                    },
-                    {
-                        type: 'img',
-                        imgs: ['aboutSectionImg1.jpg', 'aboutSectionImg2.jpg']
-                    },
-                    {
-                        type: 'text',
-                        text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
-                    },
-                    {
-                        type: 'text',
-                        text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
-                    },
-                    {
-                        type: 'question',
-                        question: 'Do you give to charity or volunteer?',
-                        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need.',
-                    }, {
-                        type: 'question',
-                        question: 'Do you give to charity or volunteer?',
-                        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need.',
-                    }, {
-                        type: 'question',
-                        question: 'Do you give to charity or volunteer?',
-                        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need.',
-                    },
-                ],
-            },
+            }
         ],
         // Объект категорий новостей
         newsCategories: {

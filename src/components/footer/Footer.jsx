@@ -71,17 +71,17 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link to={'/'}>
+              <Link to={'/news'}>
                 <span>News</span>
               </Link>
             </li>
             <li>
-              <Link to={'/'}>
+              <Link to={'/events'}>
                 <span>Events</span>
               </Link>
             </li>
             <li>
-              <Link to={'/'}>
+              <Link to={'/contacts'}>
                 <span>Contacts</span>
               </Link>
             </li>

@@ -23,12 +23,12 @@ export default function TopBanner() {
     let slides = [
         {
             id: 1,
-            smallText: 'Help people 1',
-            title: 'Little Efforts Make Big Changes',
-            action: '/about',
+            smallText: 'Европейский благотворительный фонд European Assistant Fund. Наша цель делать жизнь детей здоровой и счастливой. Присоединяйтесь к нам!',
+            title: 'EUROPEAN ASSISTANT FUND',
+            action: '/donate',
             bgImg: 'russia-ukraine-war.jpg',
         },
-        {
+        /* {
             id: 2,
             smallText: 'Help people 2',
             title: 'Little Efforts Make Big Changes',
@@ -41,7 +41,7 @@ export default function TopBanner() {
             title: 'Little Efforts Make Big Changes',
             action: '/about',
             bgImg: 'russia-ukraine-war.jpg',
-        },
+        }, */
     ]
 
     let [Slides, setSlides] = useState([])

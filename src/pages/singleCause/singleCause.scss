@@ -8,6 +8,11 @@
     margin-top: 50px*$vw;
 
     @include flex(flex, row, nowrap, space-between, flex-start, unset);
+
+    ul {
+        list-style: unset;
+        padding-left: 30px*$vw;
+    }
 }
 
 .SingleCause_content_w {

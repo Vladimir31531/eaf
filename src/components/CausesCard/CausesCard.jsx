@@ -16,7 +16,7 @@ export default function CausesCard({ cause }) {
             <div className="Causes_card_donateBtn">
                 <Link to={'/donate'}>
                     <Btn1
-                        text={'donate now'}
+                        text={'Поддержать сейчас'}
                         func={() => { }}
                     />
                 </Link>
@@ -33,16 +33,16 @@ export default function CausesCard({ cause }) {
                     </span>
                 </div>
                 <Link to={'/causes/' + cause.id}>
-                    <Btn2 text={'Read More'} func={() => { }} />
+                    <Btn2 text={'Читать далее'} func={() => { }} />
                 </Link>
             </div>
             <div className="Causes_card_bottom">
                 <div className="item">
-                    <span className="left">Raised:</span>
+                    <span className="left">Собрано:</span>
                     <span className="right">${cause.raised}</span>
                 </div>
                 <div className="item">
-                    <span className="left">Goal:</span>
+                    <span className="left">Цель:</span>
                     <span className="right">${cause.goal}</span>
                 </div>
             </div>

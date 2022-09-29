@@ -119,16 +119,16 @@ export default function Header() {
         <nav className={"nav " + ((openNav) && "openNav")}>
           <ul>
             <li onClick={() => setopenNav(false)}>
-              <Link to={'/'}><span>Home</span></Link>
+              <Link to={'/'}><span>Главная</span></Link>
             </li>
             <li onClick={() => setopenNav(false)}>
-              <Link to={'/about'}><span>About us</span></Link>
+              <Link to={'/about'}><span>О нас</span></Link>
             </li>
             <li>
               <MuiDrop
                 DropBtn={
                   <span className="label">
-                    Events 
+                    События 
                     <span className="arrow">
                       <svg viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L7 7L13 1" strokeWidth="1.5" />
@@ -139,7 +139,7 @@ export default function Header() {
                 DropItems={
                   <div className="header_dropdown">
                     <Link to={'/events'}>
-                      <span>All</span>
+                      <span>Все</span>
                     </Link>
                   </div>
                 }
@@ -149,7 +149,7 @@ export default function Header() {
               <MuiDrop
                 DropBtn={
                   <span className="label">
-                    causes
+                    Программы
                     <span className="arrow">
                       <svg viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L7 7L13 1" strokeWidth="1.5" />
@@ -160,7 +160,7 @@ export default function Header() {
                 DropItems={
                   <div className="header_dropdown">
                     <Link to={'/causes'}>
-                      <span>All</span>
+                      <span>Все</span>
                     </Link>
                     {Object.entries(causesCategs).map((categ, i) => {
                       return (
@@ -174,10 +174,10 @@ export default function Header() {
               />
             </li>
             <li onClick={() => setopenNav(false)}>
-              <Link to={'/news'}><span>News</span></Link>
+              <Link to={'/news'}><span>Новости</span></Link>
             </li>
             <li onClick={() => setopenNav(false)}>
-              <Link to={'/contacts'}><span>Contacts</span></Link>
+              <Link to={'/contacts'}><span>Контакты</span></Link>
             </li>
           </ul>
         </nav>
@@ -203,7 +203,7 @@ export default function Header() {
           </div>
           <Link to={'/donate'}>
             <Btn1
-              text={'donate now'}
+              text={'Поддержать нас'}
               func={() => { }}
             />
           </Link>

@@ -11,11 +11,11 @@ export default function About() {
     let breadcrumbsItems = [
         {
             slug: '/',
-            title: 'Home',
+            title: 'Главная',
         },
         {
             slug: '/about',
-            title: 'About US',
+            title: 'О нас',
         },
     ]
 
@@ -26,7 +26,8 @@ export default function About() {
             <Breadcrumbs items={breadcrumbsItems} />
             <Mission mission={aboutPage.mission} />
             <Stats />
-            <History history={aboutPage.history} />
+            {(aboutPage.history) && <History history={aboutPage.history} />}
+            
         </main>
     )
 }

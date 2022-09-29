@@ -39,39 +39,44 @@ export default function Stats() {
             }
         }
 
-    return (
-        <div className="Stats">
-            <div className="Stats_header">
-                <h4>our statistics</h4>
-                <h3>We provide help</h3>
-            </div>
-            <div className="Stats_w">
-                <div className="inner">
-                    {stats.map((stat) => {
-                        return (
-                            <div key={stat.id} className="Stats_item">
-                                <span className="num">{stat.value}</span>
-                                <span className="text">{stat.title}</span>
-                            </div>
-                        )
-                    })}
+    
+    if (stats.length > 0) {
+        return (
+            <div className="Stats">
+                <div className="Stats_header">
+                    <h4>our statistics</h4>
+                    <h3>We provide help</h3>
                 </div>
-            </div>
-            <button className="Stats_volunteer_btn" onClick={() => setshowModal(true)}>
-                <div className="plus">
-                    <svg viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="14" y1="1" x2="14" y2="27" stroke="white" strokeWidth="2" strokeLinecap="round" />
-                        <line x1="28" y1="14" x2="1" y2="14" stroke="white" strokeWidth="2" strokeLinecap="round" />
-                    </svg>
+                <div className="Stats_w">
+                    <div className="inner">
+                        {stats.map((stat) => {
+                            return (
+                                <div key={stat.id} className="Stats_item">
+                                    <span className="num">{stat.value}</span>
+                                    <span className="text">{stat.title}</span>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
-                <span>Become a Volunteer</span>
-            </button>
-            <MuiModal
-                content={<VolunteerModal setshowModal={setshowModal} />}
-                show={showModal}
-                setshowModal={setshowModal}
-                sx={sx}
-            />
-        </div>
-    )
+                <button className="Stats_volunteer_btn" onClick={() => setshowModal(true)}>
+                    <div className="plus">
+                        <svg viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="14" y1="1" x2="14" y2="27" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                            <line x1="28" y1="14" x2="1" y2="14" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                        </svg>
+                    </div>
+                    <span>Become a Volunteer</span>
+                </button>
+                <MuiModal
+                    content={<VolunteerModal setshowModal={setshowModal} />}
+                    show={showModal}
+                    setshowModal={setshowModal}
+                    sx={sx}
+                />
+            </div>
+        )
+    } else {
+        return ('')
+    }
 }

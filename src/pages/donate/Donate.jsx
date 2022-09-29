@@ -10,11 +10,11 @@ export default function Donate() {
     let breadcrumbsItems = [
         {
             slug: '/',
-            title: 'Home',
+            title: 'Главная',
         },
         {
             slug: '/donate',
-            title: 'Donate',
+            title: 'Поддержать',
         },
     ]
 
@@ -50,6 +50,30 @@ export default function Donate() {
         }
     }
 
+    useEffect(() => {
+        window.onload = () => {
+            let iframe = document.getElementById("donateIframe");
+            let iframeContent = iframe.contentDocument;
+            iframeContent.body.innerHTML = iframeContent.body.innerHTML +
+            `<style>
+                .donation-widget {
+                    margin: 0;
+                }
+                .basic-color-background {
+                    background-color: #000;
+                }
+            </style>`;
+        }
+    })
+
+
+
+
+
+
+
+    
+
     return (
         <main className="main">
             <Breadcrumbs items={breadcrumbsItems} />
@@ -58,7 +82,7 @@ export default function Donate() {
                 <div className="Causes_bgText">Help people</div>
                 <h4>donate</h4>
                 <h3>Help people</h3>
-                <div className="Donate_content">
+                {/* <div className="Donate_content">
 
                     <form id="donate_form" onSubmit={(e) => handleSubmit(e)}></form>
 
@@ -102,8 +126,11 @@ export default function Donate() {
                             <button form="donate_form" className="donate_form_btn">donate</button>
                         </div>
                     </div>
-                </div>
+                </div> */}
+                <iframe id="donateIframe" src="https://donorbox.org/embed/europeanassistancefund?default_interval=o&enable_auto_scroll=false" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameBorder="0" scrolling="no" width="100%" style={{maxWidth: '423px', minHeight: '600px', minWidth: '250px', maxHeight: 'none!important'}}></iframe>
             </div>
+
+            <script src="https://donorbox.org/widget.js" paypalexpress="false"></script>
         </main>
     )
 }

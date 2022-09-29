@@ -22,11 +22,11 @@ export default function SingleCause({ setsearchQuery }) {
     let [breadcrumbsItems, setbreadcrumbsItems] = useState([
         {
             slug: '/',
-            title: 'Home',
+            title: 'Главная',
         },
         {
             slug: '/causes',
-            title: 'Causes',
+            title: 'Программы',
         },
         {
             slug: '/causes/' + currCause.id,
@@ -40,11 +40,11 @@ export default function SingleCause({ setsearchQuery }) {
         setbreadcrumbsItems([
             {
                 slug: '/',
-                title: 'Home',
+                title: 'Главная',
             },
             {
                 slug: '/causes',
-                title: 'Causes',
+                title: 'Программы',
             },
             {
                 slug: '/causes/' + post.id,
@@ -88,33 +88,33 @@ export default function SingleCause({ setsearchQuery }) {
                     <div className="SingleCause_content_details">
                         <div className="left">
                             <div className="item">
-                                <span className="left">Goal:</span>
+                                <span className="left">Цель:</span>
                                 <span className="right">${currCause.goal}</span>
                             </div>
                             <div className="item">
-                                <span className="left">Raised:</span>
+                                <span className="left">Собрано:</span>
                                 <span className="right">${currCause.raised}</span>
                             </div>
                             <div className="item">
-                                <span className="left">Supporter:</span>
+                                <span className="left">Сторонники:</span>
                                 <span className="right">${currCause.supporter}</span>
                             </div>
                             <div className="item">
-                                <span className="left">Donators:</span>
+                                <span className="left">Доноры:</span>
                                 <span className="right">${currCause.donators}</span>
                             </div>
                         </div>
 
                         <Link to={'/donate'}>
                             <Btn1
-                                text={'donate now'}
+                                text={'Поддержать сейчас'}
                                 func={() => { }}
                             />
                         </Link>
                     </div>
 
                     <div className="SingleCause_content">
-                        <h3>About this cause</h3>
+                        <h3>Об этой программе</h3>
                         {currCause.content.map((item, i) => {
                             if (item.type == 'text') {
                                 return (
