@@ -9,11 +9,15 @@
     border-radius: 10px*$vw;
 
     @include flex(flex, row, nowrap, flex-start, flex-start, unset);
+
+    .btn2 {
+        color: #323232;
+    }
 }
 .Events_card_date {
     width: 100px*$vw;
     height: 100px*$vw;
-    background: #0AABC1;
+    background: #cc9955;
     border-radius: 2px*$vw;
     margin-right: 12px*$vw;
 
@@ -64,7 +68,7 @@
             font-weight: 400;
             font-size: 16px*$vw;
             line-height: 20px*$vw;
-            color: #0AABC1;
+            color: #cc9955;
         }
     }
     h5 {

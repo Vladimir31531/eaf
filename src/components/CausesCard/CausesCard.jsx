@@ -16,7 +16,7 @@ export default function CausesCard({ cause }) {
             <div className="Causes_card_donateBtn">
                 <Link to={'/donate'}>
                     <Btn1
-                        text={'Поддержать сейчас'}
+                        text={'ПІДТРИМАТИ НАС'}
                         func={() => { }}
                     />
                 </Link>

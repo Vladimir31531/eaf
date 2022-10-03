@@ -23,7 +23,7 @@ export default function TopBanner() {
     let slides = [
         {
             id: 1,
-            smallText: 'Европейский благотворительный фонд European Assistant Fund. Наша цель делать жизнь детей здоровой и счастливой. Присоединяйтесь к нам!',
+            smallText: 'Європейський благодійний фонд European Assistant Fund. Наша мета робити життя дітей здоровим і щасливим. Приєднуйся до нас!',
             title: 'EUROPEAN ASSISTANT FUND',
             action: '/donate',
             bgImg: 'russia-ukraine-war.jpg',

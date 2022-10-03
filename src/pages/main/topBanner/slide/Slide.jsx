@@ -12,7 +12,7 @@ export default function Slide({slide}) {
             <div className="topBanner_slide_content">
                 <h1>{slide.title}</h1>
                 {(slide.smallText) && <h4>{slide.smallText}</h4>}
-                {(slide.action) && <Link to={slide.action}><Btn1 text={'Поддержать нас'} func={() => { }} /></Link>}
+                {(slide.action) && <Link to={slide.action}><Btn1 text={'ПІДТРИМАТИ НАС'} func={() => { }} /></Link>}
             </div>
         </div>
     )

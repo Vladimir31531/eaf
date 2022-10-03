@@ -59,7 +59,7 @@
         font-weight: 600;
         font-size: 34px*$vw;
         line-height: 41px*$vw;
-        color: #323232;
+        color: #fff;
         margin-bottom: 20px*$vw;
     }
 }
@@ -92,12 +92,12 @@
             font-weight: 400;
             font-size: 16px*$vw;
             line-height: 20px*$vw;
-            color: #0AABC1;
+            color: #cc9955;
         }
     }
 }
 .SingleEvent_date {
-    background: #0AABC1;
+    background: #cc9955;
 
     @include flex(flex, column, nowrap, center, center, unset);
 
