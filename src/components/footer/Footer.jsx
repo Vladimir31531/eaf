@@ -5,7 +5,7 @@ import "./footer.scss"
 
 import Logo from "../../assets/img/Logo.svg"
 import { useSelector } from 'react-redux'
-import { getCuttedString, getLatestNews } from '../../functions/helpers'
+import { getClearPhone, getCuttedString, getLatestNews } from '../../functions/helpers'
 
 export default function Footer() {
 
