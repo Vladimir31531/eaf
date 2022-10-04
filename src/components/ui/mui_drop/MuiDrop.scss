@@ -12,7 +12,7 @@
 .MuiMenu-list {
     width: fit-content;
     /* background-color: transparent !important; */
-    background-color: #fff !important;
+    background-color: #282828 !important;
 }
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
     width: 100%;
@@ -21,8 +21,8 @@
 
 .header_dropdown {
     width: fit-content;
-    padding: 5px*$vw 15px*$vw;
-    background-color: #fff;
+    padding: 10px*$vw 25px*$vw;
+    background-color: #282828;
 
     @include flex(flex, column, nowrap, flex-start, center, unset);
 
@@ -34,12 +34,12 @@
         font-weight: 500;
         font-size: 18px*$vw*0.8;
         line-height: 22px*$vw*0.8;
-        color: #323232;
+        color: #fff;
         transition: 0.2s;
         cursor: pointer;
 
         &:hover {
-            color: #0AABC1;
+            color: #cc9955;
         }
     }
 }

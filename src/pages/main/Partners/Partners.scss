@@ -1,0 +1,70 @@
+@import "../../../globalStyles";
+
+
+
+.Partners {
+    width: 100%;
+    padding: 0 300px*$vw;
+    position: relative;
+    margin-top: 200px*$vw;
+
+    @include flex(flex, column, nowrap, flex-start, center, unset);
+
+    &>h4 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px*$vw;
+        line-height: 41px*$vw;
+        color: #cc9955;
+        margin-bottom: 15px*$vw;
+    }
+    &>h3 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 61px*$vw;
+        line-height: 74px*$vw;
+        color: #fff;
+        margin-bottom: 50px*$vw;
+    }
+}
+.Partners_bgText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 180px*$vw;
+    line-height: 219px*$vw;
+    color: rgba(192, 192, 192, 0.1);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.Partners_content {
+    width: 100%;
+    margin-top: 100px*$vw;
+    margin-bottom: 21px*$vw;
+
+    @include flex(flex, row, wrap, flex-start, center, unset);
+    
+    gap: 17.5px*$vw;
+}
+
+
+
+.Partners_card {
+    width: 250px*$vw;
+    height: 150px*$vw;
+    background-color: #fff;
+    border-radius: 10px*$vw;
+    overflow: hidden;
+
+    @include flex(flex, row, nowrap, center, center, unset);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
