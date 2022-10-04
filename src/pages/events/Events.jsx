@@ -11,11 +11,11 @@ export default function Events() {
     let breadcrumbsItems = [
         {
             slug: '/',
-            title: 'Главная',
+            title: 'Головна',
         },
         {
             slug: '/events',
-            title: 'События',
+            title: 'Події',
         },
     ]
 
@@ -125,16 +125,16 @@ export default function Events() {
         <main className="main">
             <Breadcrumbs items={breadcrumbsItems} />
             <div className="Events_w">
-                <div className="Events_bgText">Our Events</div>
-                <h4>upcoming events</h4>
-                <h3>Our Events</h3>
+                <div className="Events_bgText">Наші події</div>
+                <h4>Майбутні події</h4>
+                <h3>Наші події</h3>
                 <div className="EventsPage_content">
                     {(paginationItems.length > 0) ?
                         paginationItems.map((event) => {
                             return <EventsCard key={event.id} small={false} event={event} />
                         })
                         :
-                        <div className="CausesPage_content_noPosts">There is no events</div>
+                        <div className="CausesPage_content_noPosts">Подій немає</div>
                     }
                 </div>
                 {(sortedEvents.length > ItemsPerPage) &&

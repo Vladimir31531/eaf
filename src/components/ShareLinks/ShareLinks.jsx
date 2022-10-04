@@ -5,7 +5,7 @@ import "./ShareLinks.scss"
 export default function ShareLinks({title}) {
     return (
         <div className="ShareLinks">
-            <div className="title">Поделиться :</div>
+            <div className="title">Поділитися :</div>
             <a href={getShareLink('twi', title)}>
                 <div className="ShareLink">
                     <svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -10,11 +10,11 @@ export default function Contacts() {
     let [breadcrumbsItems, setbreadcrumbsItems] = useState([
         {
             slug: '/',
-            title: 'Главная',
+            title: 'Головна',
         },
         {
             slug: '/contacts',
-            title: 'Контакты',
+            title: 'Контакти',
         },
     ])
 
@@ -24,9 +24,9 @@ export default function Contacts() {
         <main className="main">
             <Breadcrumbs items={breadcrumbsItems} />
             <div className="Contacts_w">
-                <div className="Contacts_bgText">Get in touch</div>
-                <h4>Контакты</h4>
-                <h3>Свяжись с нами</h3>
+                <div className="Contacts_bgText">Зв'язатись</div>
+                <h4>Контакти</h4>
+                <h3>Зв'язатись</h3>
                 <div className="ContactsPage_content">
                     <div className="contacts_info">
                         <div className="item">
@@ -59,7 +59,7 @@ export default function Contacts() {
                                         <path d="M11.5956 0.188477C5.24306 0.188477 0.09375 5.31145 0.09375 11.6296C0.09375 14.3074 1.00322 16.3742 3.10004 19.499C5.19516 22.6237 11.5956 31.1885 11.5956 31.1885C11.5956 31.1885 17.9963 22.6257 20.0875 19.499C22.186 16.3759 23.0938 14.3074 23.0938 11.6296C23.094 5.31145 17.9446 0.188477 11.5956 0.188477ZM11.5956 15.9554C9.1944 15.9554 7.24787 14.0188 7.24787 11.6298C7.24787 9.24434 9.1944 7.3043 11.5956 7.3043C13.9969 7.3043 15.9434 9.24427 15.9434 11.6298C15.9434 14.0188 13.9969 15.9554 11.5956 15.9554Z" fill="#cc9955" />
                                     </svg>
                                 </div>
-                                <span>Адрес</span>
+                                <span>Адреса</span>
                             </div>
                             <span>{mainInfo.address}</span>
                         </div>
@@ -72,11 +72,11 @@ export default function Contacts() {
                         <div className="form">
                             <form>
                                 <div className="row">
-                                    <span className="label">Имя</span>
+                                    <span className="label">Ім'я</span>
                                     <input type="text" placeholder="ex. “John”" />
                                 </div>
                                 <div className="row">
-                                    <span className="label">Фамилия</span>
+                                    <span className="label">Прізвище</span>
                                     <input type="text" placeholder="ex. “Wik”" />
                                 </div>
                                 <div className="row">
@@ -88,11 +88,11 @@ export default function Contacts() {
                                     <input type="text" placeholder="ex. “design@example.com”" />
                                 </div>
                                 <div className="row">
-                                    <span className="label">Сообщение</span>
-                                    <textarea placeholder="Введите ваше сообщение"></textarea>
+                                    <span className="label">Повідомлення</span>
+                                    <textarea placeholder="Введіть ваше повідомлення"></textarea>
                                 </div>
                                 <div className="btn">
-                                    <Btn1 text={'Отправить сообщение'} func={() => { }} />
+                                    <Btn1 text={'Надіслати повідомлення'} func={() => { }} />
                                 </div>
                             </form>
                         </div>

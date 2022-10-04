@@ -11,11 +11,11 @@ export default function About() {
     let breadcrumbsItems = [
         {
             slug: '/',
-            title: 'Главная',
+            title: 'Головна',
         },
         {
             slug: '/about',
-            title: 'О нас',
+            title: 'Про нас',
         },
     ]
 

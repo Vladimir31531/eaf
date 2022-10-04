@@ -34,19 +34,19 @@ export default function Timer({ timestamp }) {
         <div className="SingleEvent_timer">
             <div className="SingleEvent_timer_col Days">
                 <span className="num">28</span>
-                <span className="text">days</span>
+                <span className="text">дні</span>
             </div>
             <div className="SingleEvent_timer_col Hours">
                 <span className="num">28</span>
-                <span className="text">hours</span>
+                <span className="text">годинник</span>
             </div>
             <div className="SingleEvent_timer_col Minutes">
                 <span className="num">28</span>
-                <span className="text">minutes</span>
+                <span className="text">хвилини</span>
             </div>
             <div className="SingleEvent_timer_col Seconds">
                 <span className="num">28</span>
-                <span className="text">seconds</span>
+                <span className="text">секунди</span>
             </div>
         </div>
     )

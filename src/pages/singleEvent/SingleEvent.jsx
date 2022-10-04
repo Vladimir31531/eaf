@@ -20,11 +20,11 @@ export default function SingleEvent() {
     let [breadcrumbsItems, setbreadcrumbsItems] = useState([
         {
             slug: '/',
-            title: 'Home',
+            title: 'Головна',
         },
         {
             slug: '/events',
-            title: 'Events',
+            title: 'Події',
         },
         {
             slug: '/events/' + currEvent.id,
@@ -76,7 +76,7 @@ export default function SingleEvent() {
                         <p>{currEvent.mainText}</p>
                     </div>
 
-                    <h2>Event location</h2>
+                    <h2>Місце події</h2>
 
                     {currEvent.map
                         &&

@@ -12,11 +12,11 @@ export default function News({ searchQuery, setsearchQuery }) {
     let breadcrumbsItems = [
         {
             slug: '/',
-            title: 'Главная',
+            title: 'Головна',
         },
         {
             slug: '/news',
-            title: 'Новости',
+            title: 'Новини',
         },
     ]
 
@@ -140,7 +140,7 @@ export default function News({ searchQuery, setsearchQuery }) {
             <div className="News_w">
                 {/* <div className="News_bgText">Последние Новости</div> */}
                 <h4>Наш блог</h4>
-                <h3>Последние Новости</h3>
+                <h3>Останні новини</h3>
                 <div className="openSidebarBtn" onClick={() => setopenSidebar(true)}>
                     <svg viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="4" y="10" width="6" height="2" rx="1" fill="#323232" />
@@ -155,7 +155,7 @@ export default function News({ searchQuery, setsearchQuery }) {
                                 return <NewsCard key={item.id} item={item} />
                             })
                             :
-                            <div className="NewsPage_content_noPosts">Нет новостей</div>
+                            <div className="NewsPage_content_noPosts">Нема новин</div>
                         }
                     </div>
 

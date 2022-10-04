@@ -10,11 +10,11 @@ export default function Donate() {
     let breadcrumbsItems = [
         {
             slug: '/',
-            title: 'Главная',
+            title: 'Головна',
         },
         {
             slug: '/donate',
-            title: 'Поддержать',
+            title: 'Підтримати',
         },
     ]
 
@@ -79,9 +79,9 @@ export default function Donate() {
             <Breadcrumbs items={breadcrumbsItems} />
 
             <div className="Donate_w">
-                <div className="Causes_bgText">Help people</div>
-                <h4>donate</h4>
-                <h3>Help people</h3>
+                <div className="Causes_bgText">Допоможіть людям</div>
+                <h4>Підтримати</h4>
+                <h3>Допоможіть людям</h3>
                 {/* <div className="Donate_content">
 
                     <form id="donate_form" onSubmit={(e) => handleSubmit(e)}></form>

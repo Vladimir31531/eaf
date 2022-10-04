@@ -12,11 +12,11 @@ export default function Causes({ searchQuery, setsearchQuery }) {
     let breadcrumbsItems = [
         {
             slug: '/',
-            title: 'Главная',
+            title: 'Головна',
         },
         {
             slug: '/causes',
-            title: 'Программы',
+            title: 'Програми',
         },
     ]
 
@@ -136,9 +136,9 @@ export default function Causes({ searchQuery, setsearchQuery }) {
         <main className="main">
             <Breadcrumbs items={breadcrumbsItems} />
             <div className="Causes_w">
-                <div className="Causes_bgText">Popular causes</div>
-                <h4>our causes</h4>
-                <h3>Сauses</h3>
+                <div className="Causes_bgText">Популярні програми</div>
+                <h4>наші програми</h4>
+                <h3>Програми</h3>
                 <div className="openSidebarBtn" onClick={() => setopenSidebar(true)}>
                     <svg viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="4" y="10" width="6" height="2" rx="1" fill="#323232" />
@@ -153,7 +153,7 @@ export default function Causes({ searchQuery, setsearchQuery }) {
                                 return <CausesCard key={item.id} cause={item} />
                             })
                             :
-                            <div className="CausesPage_content_noPosts">There is no causes</div>
+                            <div className="CausesPage_content_noPosts">немає програм</div>
                         }
                     </div>
                     {(window.innerWidth > 500) ?

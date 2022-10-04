@@ -231,7 +231,7 @@ export default function Header() {
             </button>
             <div className={"header_searchForm " + ((showSearchForm) && "header_searchForm_show")}>
               <form onSubmit={(e) => handleSearchForm(e)}>
-                <input type="text" placeholder="Type for search ..." />
+                <input type="text" placeholder="Введіть для пошуку ..." />
                 <button className="search_btn">
                   <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="9.5" cy="9.5" r="8.5" stroke="#323232" strokeWidth="2" />
