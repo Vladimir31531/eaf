@@ -7,6 +7,7 @@
     padding: 15px*$vw;
     background: #F1F1F1;
     border-radius: 10px*$vw;
+    overflow: hidden;
 
     @include flex(flex, row, nowrap, flex-start, flex-start, unset);
 

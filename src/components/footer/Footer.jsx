@@ -120,38 +120,38 @@ export default function Footer() {
         </div>
 
         <div className="Footer_column Footer_nav">
-          <h4 className="title">Ссылки</h4>
+          <h4 className="title">Посилання</h4>
           <ul>
             <li>
               <Link to={'/'}>
-                <span>Главная</span>
+                <span>Головна</span>
               </Link>
             </li>
             <li>
               <Link to={'/about'}>
-                <span>О нас</span>
+                <span>Про нас</span>
               </Link>
             </li>
             <li>
               <Link to={'/news'}>
-                <span>Новости</span>
+                <span>Новини</span>
               </Link>
             </li>
             <li>
               <Link to={'/events'}>
-                <span>События</span>
+                <span>Події</span>
               </Link>
             </li>
             <li>
               <Link to={'/contacts'}>
-                <span>Контакты</span>
+                <span>Контакти</span>
               </Link>
             </li>
           </ul>
         </div>
 
         <div className="Footer_column Footer_contacts">
-          <h4 className="title">Свяжитесь с нами</h4>
+          <h4 className="title">Зв'яжіться з нами</h4>
           <ul>
             <li>
               <a className="Footer_contact" href={"tel:" + getClearPhone(mainInfo.phone)}>
@@ -186,7 +186,7 @@ export default function Footer() {
         </div>
 
         <div className="Footer_column">
-          <h4 className="title">Трендовые новости</h4>
+          <h4 className="title">Трендові новини</h4>
           <div className="Footer_column_newsW">
             {getLatestNews(news, 'newDate').slice(0, 2).map((item) => {
               return (

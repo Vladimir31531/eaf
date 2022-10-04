@@ -12,9 +12,9 @@ export default function Events() {
     if (events.length > 0) {
         return (
             <div className="Events">
-                <div className="Causes_bgText">Our Events</div>
-                <h4>upcoming events</h4>
-                <h3>Our Events</h3>
+                <div className="Causes_bgText">Наші події</div>
+                <h4>Майбутні події</h4>
+                <h3>Наші події</h3>
                 <div className="Events_content">
                     <div className="Events_content_left">
                         {getUpcomingEvents(events, 'eventStart').map((event, i) => {

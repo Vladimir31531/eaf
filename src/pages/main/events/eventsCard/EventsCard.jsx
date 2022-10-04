@@ -59,7 +59,7 @@ export default function EventsCard({small, event}) {
                     </div>
                     <div className="Events_card_btn">
                         <Link to={'/events/' + event.id}>
-                            <Btn2 text={'Read More'} func={() => {}} />
+                            <Btn2 text={'Читать далі'} func={() => {}} />
                         </Link>
                     </div>
                 </div>

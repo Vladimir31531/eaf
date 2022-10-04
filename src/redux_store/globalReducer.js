@@ -54,8 +54,8 @@ export const globalReducer = createSlice({
                     id: 1,
                     images: ['about_eaf.jpeg'],
                     smallTitle: 'О нас',
-                    bigTitle: 'ИНФОРМАЦИЯ О ФОНДЕ',
-                    text: <><span>Европейский фонд помощи был основан 22 июня 2022г. в городе Юрмала.</span><br/><span>Наша команда молодых энергичных людей, которым не чуждо чувство сострадания и отзывчивости. Благотворительный фонд реализует собственные проекты, принимает участие в финансировании волонтеров — единомышленников, которые так же как и мы понимают, что дети — это наше будущие.</span></>,
+                    bigTitle: 'ІНФОРМАЦІЯ ПРО ФОНД',
+                    text: <><span>Європейський фонд допомоги було засновано 22 червня 2022р. у місті Юрмала.</span><br/><span>Наша команда молодих енергійних людей, яким не чуже почуття співчуття та чуйності. Благодійний фонд реалізує власні проекти, бере участь у фінансуванні волонтерів — однодумців, які так само, як і ми розуміють, що діти — це наше майбутнє.</span></>,
                 },
                 /* {
                     id: 2,
@@ -472,7 +472,7 @@ export const globalReducer = createSlice({
                         text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need.',
                     }, */
                 ],
-            }, {
+            },/*  {
                 id: 2,
                 img: 'supportInEurope.jpg',
                 title: 'Помощь переселенцам в Европе',
@@ -487,33 +487,8 @@ export const globalReducer = createSlice({
                         type: 'text',
                         text: 'Вы можете поддержать наши другие программы нажав на кнопку "Поддержать".',
                     },
-                    /* {
-                        type: 'img',
-                        imgs: ['aboutSectionImg1.jpg', 'aboutSectionImg2.jpg']
-                    },
-                    {
-                        type: 'text',
-                        text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
-                    },
-                    {
-                        type: 'text',
-                        text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
-                    },
-                    {
-                        type: 'question',
-                        question: 'Do you give to charity or volunteer?',
-                        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need.',
-                    }, {
-                        type: 'question',
-                        question: 'Do you give to charity or volunteer?',
-                        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need.',
-                    }, {
-                        type: 'question',
-                        question: 'Do you give to charity or volunteer?',
-                        text: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.If you are going to use a passage of Lorem Ipsum, you need.',
-                    }, */
                 ],
-            }
+            } */
         ],
         // Объект категорий новостей
         newsCategories: {

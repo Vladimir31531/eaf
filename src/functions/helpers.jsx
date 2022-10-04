@@ -23,9 +23,8 @@ export let getCuttedString = (str, limit) => {
     }
 }
 export let getDayMonth = (timestamp, str, fullMonth) => {
-    const monthNames = ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
-    ];
+    const monthNames = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень',
+        'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'];
     let date = new Date(timestamp);
     let data
     if (str == 'num') {
