@@ -234,10 +234,10 @@
             text-align: center;
         }
     }
-    .News_bgText {
-        font-size: 180px*$vw;
-        line-height: 219px*$vw;
-        top: 300px*$vw;
+    .Contacts_bgText {
+        font-size: 180px*$TELvw*0.3;
+        line-height: 219px*$TELvw*0.3;
+        top: 300px*$TELvw*0.42;
     }
 
     .ContactsPage_content {
@@ -245,19 +245,73 @@
 
         @include flex(flex, column, wrap, flex-start, center, unset);
     }
+
+    .contacts_text {
+        width: 100%;
+        font-size: 20px*$TELvw*0.6;
+        line-height: 24px*$TELvw*0.6;
+        margin-bottom: 50px*$TELvw*0.6;
+    }
+
+    .contacts_infoAndForm {
+        width: 100%;
+        margin-bottom: 60px*$TELvw;
+
+        @include flex(flex, column, nowrap, flex-start, center, unset);
+
+        .form {
+            width: 685px*$TELvw*0.465;
+            height: auto;
+            padding: 30px*$TELvw*0.465 30px*$TELvw*0.465 50px*$TELvw*0.465 30px*$TELvw*0.465;
+            border: 1px*$TELvw*0.465 solid #B9B9B9;
+            border-radius: 2px*$TELvw*0.465 30px*$TELvw*0.465 30px*$TELvw*0.465 30px*$TELvw*0.465;
+
+            .row {
+                width: 100%;
+                margin-bottom: 35px*$TELvw*0.465;
+
+                .label {
+                    font-size: 24px*$TELvw*0.465;
+                    line-height: 29px*$TELvw*0.465;
+                    margin-bottom: 5px*$TELvw*0.465;
+                }
+                input,
+                textarea {
+                    width: 100%;
+                    height: 37px*$TELvw*0.7;
+                    border-bottom: 1px*$TELvw*0.7 solid #B9B9B9;
+
+                    font-size: 14px*$TELvw*0.7;
+                    line-height: 17px*$TELvw*0.7;
+
+                    &::placeholder {
+                        font-size: 14px*$TELvw*0.7;
+                        line-height: 17px*$TELvw*0.7;
+                    }
+                }
+                textarea {
+                    resize: none;
+                    height: 70px*$TELvw*0.7;
+                }
+            }
+        }
+    }
+
     .contacts_info {
         width: 100%;
-        margin-bottom: 30px*$TELvw;
+        margin-bottom: 50px*$TELvw*0.5;
 
-        @include flex(flex, row, wrap, center, flex-start, unset);
-        gap: 12px*$TELvw;
+        @include flex(flex, column, nowrap, flex-start, center, unset);
+
+        gap: 20px*$TELvw*0.5;
 
         .item {
-            width: 48%;
+            width: 420px*$TELvw*0.5;
             height: 180px*$TELvw*0.5;
             border: 1px*$TELvw*0.5 solid #B9B9B9;
             border-radius: 2px*$TELvw*0.5 30px*$TELvw*0.5 30px*$TELvw*0.5 30px*$TELvw*0.5;
             padding: 20px*$TELvw*0.5;
+
             .title {
                 width: 100%;
                 margin-bottom: 35px*$TELvw*0.5;
@@ -279,56 +333,9 @@
         }
     }
 
-    .contacts_mapForm {
+    .map {
         width: 100%;
-
-        @include flex(flex, column-reverse, nowrap, flex-start, center, unset);
-
-        .map {
-            width: 100%;
-            height: 250px*$TELvw;
-            border-radius: 10px*$vw;
-            overflow: hidden;
-        }
-        .form {
-            width: 100%;
-            height: auto;
-            padding: 30px*$TELvw*0.7 30px*$TELvw*0.7 50px*$TELvw*0.7 30px*$TELvw*0.7;
-            border: 1px*$TELvw*0.7 solid #B9B9B9;
-            border-radius: 2px*$TELvw*0.7 30px*$TELvw*0.7 30px*$TELvw*0.7 30px*$TELvw*0.7;
-            margin-bottom: 30px*$TELvw;
-
-            .row {
-                width: 100%;
-                margin-bottom: 35px*$TELvw*0.7;
-
-                .label {
-                    font-size: 24px*$TELvw*0.7;
-                    line-height: 29px*$TELvw*0.7;
-                    margin-bottom: 5px*$TELvw*0.7;
-                }
-                input,
-                textarea {
-                    width: 100%;
-                    height: 37px*$TELvw*0.7;
-                    border-bottom: 1px*$TELvw*0.7 solid #B9B9B9;
-                    font-size: 14px*$TELvw*0.8;
-                    line-height: 17px*$TELvw*0.8;
-
-                    &::placeholder {
-                        font-size: 14px*$TELvw*0.7;
-                        line-height: 17px*$TELvw*0.7;
-                    }
-                }
-                textarea {
-                    resize: none;
-                    height: 70px*$TELvw*0.8;
-                }
-            }
-            .btn {
-                width: fit-content;
-                margin: 0 auto;
-            }
-        }
+        height: 454px*$TELvw*0.5;
+        border-radius: 10px*$TELvw*0.5;
     }
 }
