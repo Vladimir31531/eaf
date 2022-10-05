@@ -78,7 +78,7 @@ export default function Requisites() {
     }, [])
 
     let TabsSX = (window.innerWidth > 500)
-        &&
+        ?
         {
             '& .MuiTabs-flexContainer': {
                 justifyContent: 'center',
@@ -103,6 +103,41 @@ export default function Requisites() {
                 fontStyle: 'normal',
                 fontWeight: 700,
                 fontSize: '1.3541666667vw',
+                lineHeight: '185.6%',
+                letterSpacing: '0.19em',
+                color: '#fff',
+                whiteSpace: 'nowrap',
+            }
+        }
+        :
+        {
+            minHeight: 'auto',
+
+            '& .MuiTabs-flexContainer': {
+                justifyContent: 'center',
+                gap: '20px'
+            },
+            '& .MuiTabs-indicator': {
+                backgroundColor: 'transparent',
+                height: '0',
+                top: 0,
+                borderTopLeftRadius: '0',
+                borderTopRightRadius: '0',
+                color: 'transparent',
+            },
+            '& .MuiButtonBase-root.Mui-selected': {
+                backgroundColor: 'transparent',
+                color: '#000',
+                borderBottom: '1px solid #000'
+            },
+            '& .MuiButtonBase-root': {
+                maxWidth: 'fit-content',
+                minHeight: 'auto',
+                padding: '0',
+                fontFamily: 'Montserrat',
+                fontStyle: 'normal',
+                fontWeight: 700,
+                fontSize: '2.3541666667vw',
                 lineHeight: '185.6%',
                 letterSpacing: '0.19em',
                 color: '#fff',

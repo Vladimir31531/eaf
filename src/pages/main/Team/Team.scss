@@ -111,3 +111,65 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .Team {
+        width: 100%;
+        padding: 0 20px*$TELvw;
+        position: relative;
+
+        &>h4 {
+            font-size: 34px*$TELvw*0.5;
+            line-height: 41px*$TELvw*0.5;
+            margin-bottom: 15px*$TELvw*0.5;
+        }
+        &>h3 {
+            font-size: 61px*$TELvw*0.5;
+            line-height: 74px*$TELvw*0.5;
+            margin-bottom: 50px*$TELvw*0.5;
+        }
+    }
+
+    .Team_content {
+        width: 100%;
+        margin-top: 100px*$vw;
+        margin-bottom: 21px*$vw;
+        gap: 17px*$TELvw;
+    }
+
+    .Team_Card {
+        width: 303px*$TELvw*0.5;
+        margin-bottom: 20px*$TELvw;
+
+        .img {
+            width: 303px*$TELvw*0.5;
+            height: 303px*$TELvw*0.5;
+            margin-bottom: 30px*$TELvw*0.5;
+        }
+        .title {
+            font-size: 34px*$TELvw*0.5;
+            line-height: 41px*$TELvw*0.5;
+            margin-bottom: 30px*$TELvw*0.5;
+        }
+        .position {
+            font-size: 20px*$TELvw*0.5;
+            line-height: 24px*$TELvw*0.5;
+            margin-bottom: 30px*$TELvw*0.5;
+        }
+        .socials {
+            gap: 20px*$TELvw*0.5;
+        }
+        .social_link {
+            width: 50px*$TELvw*0.5;
+            height: 50px*$TELvw*0.5;
+        }
+    }
+}

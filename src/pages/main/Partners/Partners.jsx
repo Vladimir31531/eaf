@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Partners.scss"
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import MuiSlider from '../../../components/ui/muiSlider/muiSlider';
 
 export default function Partners() {
 
-    let Partners = [
+    let PartnersArr = [
         {
             id: 1,
             img: 'partner1.jpg',
@@ -30,19 +34,57 @@ export default function Partners() {
         },
     ]
 
+    let [prtnrs, setPrtnrs] = useState([])
+    
+
+    useEffect(() => {
+        let Partners = []
+        PartnersArr.map((partner) => {
+            Partners.push(
+                <div key={partner.id} className="Partners_card">
+                    <img src={'./img/' + partner.img} alt="" />
+                </div>
+            )
+        })
+        setPrtnrs(Partners)
+    }, [])
+
+    const responsive = [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+    ]
+
     return (
         <div className="Partners">
-            <div className="Partners_bgText">Наші партнери</div>
             <h4>партнери</h4>
             <h3>Наші партнери</h3>
             <div className="Partners_content">
-                {Partners.map((partner) => {
-                    return (
-                        <div key={partner.id} className="Partners_card">
-                            <img src={'./img/' + partner.img} alt="" />
-                        </div>
-                    )
-                })}
+                <MuiSlider
+                    slides={prtnrs}
+                    responsive={responsive}
+                />
             </div>
         </div>
     )

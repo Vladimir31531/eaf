@@ -100,7 +100,7 @@ export default function Team() {
 
     return (
         <div className="Team">
-            <div className="Team_bgText">Наша команда</div>
+            {/* <div className="Team_bgText">Наша команда</div> */}
             <h4>Команда</h4>
             <h3>Наша команда</h3>
             <div className="Team_content">

@@ -38,7 +38,7 @@ function a11yProps(index) {
     };
 }
 
-export default function MuiTabs({ tabs, tabPanels, TabsSX, TabSX, mainBoxSX }) {
+export default function MuiTabs({ tabs, tabPanels, TabsSX, TabSX, mainBoxSX, sx }) {
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -47,7 +47,7 @@ export default function MuiTabs({ tabs, tabPanels, TabsSX, TabSX, mainBoxSX }) {
 
     return (
         <Box sx={mainBoxSX}>
-            <Box sx={{}}>
+            <Box sx={sx}>
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example"
                     sx={TabsSX}
                 >

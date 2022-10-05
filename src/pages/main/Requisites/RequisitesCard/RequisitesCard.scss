@@ -37,3 +37,40 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .RequisitesCard {
+        width: 100%;
+        margin-top: 50px*$TELvw*0.6;
+
+        @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+        gap: 30px*$TELvw*0.6;
+    }
+    .RequisitesCard_row {
+        width: 100%;
+
+        .left {
+            width: 80%;
+            .title {
+                font-size: 16px*$TELvw*0.6;
+                line-height: 20px*$TELvw*0.6;
+                margin-bottom: 10px*$TELvw*0.6;
+            }
+            p {
+                font-size: 16px*$TELvw*0.6;
+                line-height: 20px*$TELvw*0.6;
+            }
+        }
+    }
+}

@@ -38,3 +38,27 @@
     visibility: visible;
     opacity: 1
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .copyBtn {
+        width: 25px*$TELvw*0.7;
+        height: 25px*$TELvw*0.7;
+    }
+
+    .my_alert {
+        left: -100px*$TELvw*0.7;
+        padding: 10px*$TELvw*0.7;
+        border-radius: 8px*$TELvw*0.7;
+        font-size: 14px*$TELvw*0.7;
+        line-height: 17px*$TELvw*0.7;
+    }
+}

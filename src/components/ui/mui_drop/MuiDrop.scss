@@ -73,11 +73,11 @@
         width: 100%;
         padding: 5px*$TELvw 15px*$TELvw;
         border-radius: 5px*$TELvw;
-        background-color: #fff;
+        background-color: #282828;
 
         @include flex(flex, column, nowrap, flex-start, center, unset);
 
-        gap: 10px*$vw;
+        gap: 10px*$TELvw;
 
         span {
             font-size: 18px*$TELvw*0.8;
