@@ -117,7 +117,7 @@ export default function Footer() {
       </div>
       <div className="Footer_copyright">
         © 2022 EAF is Powered  by 
-        <a href="#">MIXTECHNOLOGY</a>
+        <a href="https://wox.academy/it-kompaniya/">WOX-Studio</a>
       </div>
     </footer>
   )
