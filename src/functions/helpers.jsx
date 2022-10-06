@@ -44,6 +44,10 @@ export let getUpcomingEvents = (arr, key) => {
     let sorted = [...arr].sort((a, b) => a[key] - b[key])
     return sorted.filter((event) => (event.eventEnd > Date.now()) && true)
 }
+export let getPastEvents = (arr, key) => {
+    let sorted = [...arr].sort((a, b) => a[key] - b[key])
+    return sorted.filter((event) => (event.eventEnd < Date.now()) && true)
+}
 export let getLatestNews = (arr, key) => {
     return [...arr].sort((a, b) => b[key] - a[key])
 }

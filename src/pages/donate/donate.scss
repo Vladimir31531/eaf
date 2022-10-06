@@ -27,6 +27,20 @@
         color: #fff;
         margin-bottom: 50px*$vw;
     }
+
+    .forms_btns {
+        @include flex(flex, column, nowrap, flex-start, center, unset);
+        gap: 20px*$vw;
+
+        a {
+            width: 290px*$vw;
+
+            .btn1 {
+                width: 100%;
+                height: 63px*$vw;
+            }
+        }
+    }
 }
 .Donate_bgText {
     font-family: 'Montserrat';

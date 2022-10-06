@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import Breadcrumbs from '../../components/ui/breadcrumbs/Breadcrumbs'
 import MuiPagination from '../../components/ui/pagination/Pagination'
-import { getUpcomingEvents, useCurrentPagePosts } from '../../functions/helpers'
+import { getPastEvents, getUpcomingEvents, useCurrentPagePosts } from '../../functions/helpers'
 import EventsCard from '../main/events/eventsCard/EventsCard'
 import "./events.scss"
 
-export default function Events() {
+export default function Events({ selectedEvents }) {
 
     let breadcrumbsItems = [
         {
@@ -21,7 +21,14 @@ export default function Events() {
 
     let events = useSelector((state) => state.globalReducer.events)
 
-    let [sortedEvents, setsortedEvents] = useState([...getUpcomingEvents(events, 'eventStart')])
+    let [sortedEvents, setsortedEvents] = useState((selectedEvents == 'future') ? [...getUpcomingEvents(events, 'eventStart')] : (selectedEvents == 'past') ? [...getPastEvents(events, 'eventStart')] : events)
+
+    useEffect(() => {
+        let arr = (selectedEvents == 'future') ? [...getUpcomingEvents(events, 'eventStart')] : (selectedEvents == 'past') ? [...getPastEvents(events, 'eventStart')] : events
+        setsortedEvents([...arr])
+    }, [selectedEvents])
+
+    console.log(sortedEvents)
 
     // Индекс текущей страницы
     let [currentPage, setcurrentPage] = useState(1)

@@ -41,48 +41,51 @@ export default function Sidebar({ news, categs, setsearchQuery, page, openSideba
                     </form>
                 </div>
             </div>
-            <div className="sidebar_block">
-                <h4 className="title">Категорії</h4>
-                <div className="sidebar_block_content">
-                    <ul className="sidebar_categs">
-                        {Object.entries(categs).map((categ) => {
-                            if (page == 'news') {
-                                return (
-                                    <Link key={categ[1].slug} to={'/news'}>
-                                        <li
-                                            style={{ 
-                                                fontWeight: (filter.includes(categ[1].slug)) ? 700 : 500, 
-                                                color: ((window.innerWidth > 500) ? '#fff' : (filter.includes(categ[1].slug)) ? '#cc9955' : '#fff')
-                                            }}
-                                            onClick={() => {
-                                                setopenSidebar(false);
-                                                dispatch(setSelectedNewsCategs(categ[1].slug));
-                                            }}>
-                                            {categ[1].title}
-                                        </li>
-                                    </Link>
-                                )
-                            } else if (page == 'causes') {
-                                return (
-                                    <Link key={categ[1].slug} to={'/causes'}>
-                                        <li
-                                            style={{
-                                                fontWeight: (filter.includes(categ[1].slug)) ? 700 : 500,
-                                                color: ((window.innerWidth > 500) ? '#fff' : (filter.includes(categ[1].slug)) ? '#cc9955' : '#fff')
-                                            }}
-                                            onClick={() => {
-                                                setopenSidebar(false);
-                                                dispatch(setSelectedNewsCategs(categ[1].slug));
-                                            }}>
-                                            {categ[1].title}
-                                        </li>
-                                    </Link>
-                                )
-                            }
-                        })}
-                    </ul>
+            {(Object.entries(categs).length > 0)
+                &&
+                <div className="sidebar_block">
+                    <h4 className="title">Категорії</h4>
+                    <div className="sidebar_block_content">
+                        <ul className="sidebar_categs">
+                            {Object.entries(categs).map((categ) => {
+                                if (page == 'news') {
+                                    return (
+                                        <Link key={categ[1].slug} to={'/news'}>
+                                            <li
+                                                style={{
+                                                    fontWeight: (filter.includes(categ[1].slug)) ? 700 : 500,
+                                                    color: ((window.innerWidth > 500) ? '#fff' : (filter.includes(categ[1].slug)) ? '#cc9955' : '#fff')
+                                                }}
+                                                onClick={() => {
+                                                    setopenSidebar(false);
+                                                    dispatch(setSelectedNewsCategs(categ[1].slug));
+                                                }}>
+                                                {categ[1].title}
+                                            </li>
+                                        </Link>
+                                    )
+                                } else if (page == 'causes') {
+                                    return (
+                                        <Link key={categ[1].slug} to={'/causes'}>
+                                            <li
+                                                style={{
+                                                    fontWeight: (filter.includes(categ[1].slug)) ? 700 : 500,
+                                                    color: ((window.innerWidth > 500) ? '#fff' : (filter.includes(categ[1].slug)) ? '#cc9955' : '#fff')
+                                                }}
+                                                onClick={() => {
+                                                    setopenSidebar(false);
+                                                    dispatch(setSelectedNewsCategs(categ[1].slug));
+                                                }}>
+                                                {categ[1].title}
+                                            </li>
+                                        </Link>
+                                    )
+                                }
+                            })}
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            }
             <div className="sidebar_block">
                 <h4 className="title">Популярні пости</h4>
                 <div className="sidebar_block_content">

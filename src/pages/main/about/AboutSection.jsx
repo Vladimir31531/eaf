@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import Btn2 from '../../../components/ui/btn2/Btn2'
+import { getCuttedString } from '../../../functions/helpers'
 import "./AboutSection.scss"
 
 export default function AboutSection() {
@@ -19,7 +20,7 @@ export default function AboutSection() {
                 <h4>Про нас</h4>
                 <h3>{aboutSection[0].bigTitle}</h3>
                 <div className="text">
-                    <p>{aboutSection[0].text}</p>
+                    <p>{getCuttedString(aboutSection[0].text, 95)}</p>
                 </div>
                 <Link to={'/about'}>
                     <Btn2 text={'Читати далі'} func={() => { }} />

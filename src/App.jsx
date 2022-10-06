@@ -23,17 +23,19 @@ function App() {
 
   let [searchQuery, setsearchQuery] = useState('')
 
+  let [selectedEvents, setselectedEvents] = useState('')
+
   return (
     <div className="App">
       <BrowserRouter>
         <ScrollToTop/>
 
-        <Header/>
+        <Header setselectedEvents={setselectedEvents} />
 
         <Routes>
           <Route path={'/'} element={<Main/>}/>
           <Route path={'/about'} element={<About/>}/>
-          <Route path={'/events'} element={<Events/>}/>
+          <Route path={'/events'} element={<Events selectedEvents={selectedEvents} />}/>
           <Route path={'/events/:id'} element={<SingleEvent/>}/>
           <Route path={'/news'} element={<News searchQuery={searchQuery} setsearchQuery={setsearchQuery} />}/>
           <Route path={'/news/:id'} element={<SingleNew setsearchQuery={setsearchQuery} />}/>

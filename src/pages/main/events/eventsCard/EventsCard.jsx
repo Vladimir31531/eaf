@@ -29,7 +29,7 @@ export default function EventsCard({small, event}) {
                         </div>
                         <h5>{event.title}</h5>
                         <div className="text">
-                            <p>{getCuttedString(event.excerpt, 85)}</p>
+                            <p>{getCuttedString(event.excerpt, 42)}</p>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ export default function EventsCard({small, event}) {
                         </div>
                         <h5>{event.title}</h5>
                         <div className="text">
-                            <p>{getCuttedString(event.mainText, ((location.pathname == '/events' && window.innerWidth <= 500) ? 85 : 290))}</p>
+                            <p>{getCuttedString(event.mainText, ((location.pathname == '/events' && window.innerWidth <= 500) ? 85 : 190))}</p>
                         </div>
                     </div>
                     <div className="Events_card_btn">

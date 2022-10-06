@@ -39,6 +39,8 @@
         object-fit: cover;
     }
     .img1 {
+        width: 864px*$vw*0.75;
+        height: 648px*$vw*0.75;
         bottom: 0;
         left: 0;
         z-index: 1;

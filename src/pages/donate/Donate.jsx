@@ -4,6 +4,7 @@ import Breadcrumbs from '../../components/ui/breadcrumbs/Breadcrumbs'
 import MySelect from '../../components/ui/MySelect/MySelect'
 import { useSelector } from 'react-redux'
 import { getCuttedString } from '../../functions/helpers'
+import Btn1 from '../../components/ui/btn1/Btn1'
 
 export default function Donate() {
 
@@ -79,7 +80,7 @@ export default function Donate() {
             <Breadcrumbs items={breadcrumbsItems} />
 
             <div className="Donate_w">
-                <div className="Causes_bgText">Допоможіть людям</div>
+                <div className="Causes_bgText">Підтримати</div>
                 <h4>Підтримати</h4>
                 <h3>Допоможіть людям</h3>
                 {/* <div className="Donate_content">
@@ -128,6 +129,18 @@ export default function Donate() {
                     </div>
                 </div> */}
                 <iframe id="donateIframe" src="https://donorbox.org/embed/europeanassistancefund?default_interval=o&enable_auto_scroll=false" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameBorder="0" scrolling="no" width="100%" style={{maxWidth: '423px', minHeight: '600px', minWidth: '250px', maxHeight: 'none!important'}}></iframe>
+
+                <div className="forms_btns">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhIYUK98aMXCa6xzi46Oy-DYqBERT4rFjv8R9GEGFxgjBxtQ/viewform" target="_blank">
+                        <Btn1 text={'Заявка на допомогу'} func={() => { }} />
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSezukLw9XSyfp9ifIWBUrk10chm5wtIWNb_TBKsnh1B1LbK5g/viewform" target="_blank">
+                        <Btn1 text={'Анкета для волонтерів'} func={() => { }} />
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3bTiVd-YpjddOXzETX4HtaqmrQYdPk4It_xhRrrj6bBXL4Q/viewform" target="_blank">
+                        <Btn1 text={'Заявка на допомогу від дитячого психолога'} func={() => { }} />
+                    </a>
+                </div>
             </div>
 
             <script src="https://donorbox.org/widget.js" paypalexpress="false"></script>

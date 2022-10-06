@@ -4,6 +4,7 @@ import Btn1 from '../../components/ui/btn1/Btn1'
 import { useSelector } from 'react-redux'
 import "./contacts.scss"
 import { getClearPhone } from '../../functions/helpers'
+import Socials from '../../components/ui/socials/Socials'
 
 export default function Contacts() {
 
@@ -69,6 +70,10 @@ export default function Contacts() {
                                 </div>
                                 <span>{mainInfo.address}</span>
                             </div>
+
+                            <div className="contacts_socials">
+                                <Socials />
+                            </div>
                         </div>
                         <div className="form">
                             <form>
@@ -99,9 +104,11 @@ export default function Contacts() {
                         </div>
                     </div>
 
-                    <div className="map">
+                    
+
+                    {/* <div className="map">
                         {mainInfo.map}
-                    </div>
+                    </div> */}  
                 </div>
             </div>
         </main>
