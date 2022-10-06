@@ -32,6 +32,7 @@ export default function About() {
         <main className="main">
             <Breadcrumbs items={breadcrumbsItems} />
             <Mission mission={aboutPage.mission} />
+            <h3 className="aboutDocs_title">Документи Фонду</h3>
             <div className="aboutPage_btns">
                 <Btn1 text={'Реєстрація'} func={() => downloadFile("./docs/", 'lemums.pdf')} />
                 <Btn1 text={'Статут Фонду'} func={() => downloadFile("./docs/", 'european_assistance_fonda_statuti.pdf')} />
