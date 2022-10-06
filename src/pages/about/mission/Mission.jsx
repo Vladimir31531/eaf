@@ -11,7 +11,13 @@ export default function Mission({ mission }) {
                             <h4>{row.smallTitle}</h4>
                             <h3>{row.bigTitle}</h3>
                             <div className="Mission_row_text">
-                                <p>{row.text}</p>
+                                {(typeof row.text == 'string')
+                                    ?
+                                    <p>{row.text}</p>
+                                    : (typeof row.text == 'object') &&
+                                    row.text
+                                }
+                                
                             </div>
                         </div>
                         <div className="item img">

@@ -136,7 +136,7 @@ export default function Causes({ searchQuery, setsearchQuery }) {
         <main className="main">
             <Breadcrumbs items={breadcrumbsItems} />
             <div className="Causes_w">
-                <div className="Causes_bgText">Популярні програми</div>
+                <div className="Causes_bgText">Програми</div>
                 <h4>наші програми</h4>
                 <h3>Програми</h3>
                 <div className="openSidebarBtn" onClick={() => setopenSidebar(true)}>

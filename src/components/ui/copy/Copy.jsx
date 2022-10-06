@@ -26,7 +26,7 @@ export default function Copy({ copyValue }) {
                 </defs>
             </svg>
 
-            <div className={"my_alert " + ((showAlertCopied) && "show")}>Copied</div>
+            <div className={"my_alert " + ((showAlertCopied) && "show")}>скопійовано</div>
         </div>
     )
 }

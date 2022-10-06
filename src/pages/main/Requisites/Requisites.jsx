@@ -12,53 +12,43 @@ export default function Requisites() {
             },
             {
                 id: 1,
-                title: 'Одержувач',
-                value: 'Никоноров Антон Сергеевич',
+                title: 'Swedbank',
+                value: '40008316962',
             },
             {
                 id: 2,
-                title: 'Ідентифікаційний код отримувача',
-                value: '3159419917',
+                title: 'IBAN',
+                value: 'LV13HABA0551053065088',
             },
             {
                 id: 3,
-                title: 'Рахунок отримувача',
-                value: 'IBAN UA87320478000002620413103026',
-            },
-            {
-                id: 4,
-                title: 'Призначення платежу',
-                value: 'субсчета — 26204131063026.400101.980 Пожертвования',
-            },
-            {
-                id: 5,
-                title: 'Номер картки',
-                value: '4966 8046 0227 3616',
+                title: 'Призначення',
+                value: 'Пожертвування',
             },
         ],
         [
             {
-                tabTitle: 'Реквізити рахунку'
+                tabTitle: 'Реквізити криптовалют'
             },
             {
                 id: 1,
-                title: 'Swedbank',
-                value: 'EUROPEAN ASSISTANCE FUND',
+                title: 'USDT TRC20',
+                value: 'TF6tCv222n8muCrv7SdfCzZNNHfG25B2Wj',
             }, 
             {
                 id: 2,
-                title: 'Ідентифікаційний код отримувача',
-                value: '38805429',
+                title: 'USDT ERC20',
+                value: '0xd74959d40252c936Ef377ED6A7D609A0074Ceeea',
             }, 
             {
                 id: 3,
-                title: 'IBAN',
-                value: 'LV13HABA0551053065088',
+                title: 'BTC',
+                value: 'bc1qdgpztwn9y0up5zq99m25vq6kw0sn6zv5k3fypk',
             }, 
             {
                 id: 4,
-                title: 'Призначення',
-                value: 'Пожертвование',
+                title: 'ETH',
+                value: '0xd74959d40252c936Ef377ED6A7D609A0074Ceeea',
             }, 
         ]
     ]

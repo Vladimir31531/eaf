@@ -2,3 +2,10 @@
 
 
 
+.aboutPage_btns {
+    padding: 0 300px*$vw;
+
+    @include flex(flex, row, nowrap, center, center, unset);
+
+    gap: 50px*$vw;
+}

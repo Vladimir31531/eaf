@@ -14,7 +14,7 @@ export default function Causes() {
                 <img src={bgImg} alt="" />
             </div>
             <h4>Програми фонду</h4>
-            <h3>ПОПУЛЯРНІ ПРОГРАМИ</h3>
+            <h3>Поточні програми</h3>
             <div className="sectionCauses_w">
                 <div className="inner">
                     {causes.map((cause, i) => {

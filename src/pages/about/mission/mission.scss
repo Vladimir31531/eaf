@@ -63,6 +63,11 @@
             font-size: 18px*$vw;
             line-height: 28px*$vw;
             color: #fff;
+
+            ul {
+                padding-left: 25px*$vw;
+                list-style: unset;
+            }
         }
     }
 }
