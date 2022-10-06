@@ -237,6 +237,22 @@
             margin-bottom: 50px*$TELvw*0.5;
             text-align: center;
         }
+
+        .forms_btns {
+            @include flex(flex, column, nowrap, flex-start, center, unset);
+            gap: 20px*$TELvw*0.6;
+
+            a {
+                width: 290px*$TELvw*0.7;
+
+                .btn1 {
+                    width: 100%;
+                    height: 63px*$TELvw*0.6;
+                    font-size: 10px*$TELvw;
+                    line-height: 12px*$TELvw;
+                }
+            }
+        }
     }
     .Donate_bgText {
         font-size: 180px*$vw;
@@ -356,4 +372,7 @@
         text-transform: uppercase;
         color: #0AABC1;
     }
+
+
+    
 }

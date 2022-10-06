@@ -99,7 +99,7 @@ export default function Sidebar({ news, categs, setsearchQuery, page, openSideba
                                                 <img src={'../img/' + item.img} alt="" />
                                             </div>
                                             <div className="content">
-                                                <h5 className="title">{getCuttedString(item.title, 60)}</h5>
+                                                <h5 className="title">{getCuttedString(item.title, 30)}</h5>
                                                 <Link to={'/news/' + item.id} className="button">
                                                     <Btn2 text={'Читати далі'} func={() => { }} />
                                                 </Link>
@@ -117,7 +117,7 @@ export default function Sidebar({ news, categs, setsearchQuery, page, openSideba
                                                 <img src={'../img/' + item.img} alt="" />
                                             </div>
                                             <div className="content">
-                                                <h5 className="title">{getCuttedString(item.title, 60)}</h5>
+                                                <h5 className="title">{getCuttedString(item.title, 30)}</h5>
                                                 <Link to={'/causes/' + item.id} className="button">
                                                     <Btn2 text={'Читати далі'} func={() => { }} />
                                                 </Link>

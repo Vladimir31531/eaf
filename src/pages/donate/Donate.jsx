@@ -81,7 +81,7 @@ export default function Donate() {
 
             <div className="Donate_w">
                 <div className="Causes_bgText">Підтримати</div>
-                <h4>Підтримати</h4>
+                <h4>Роби добро</h4>
                 <h3>Допоможіть людям</h3>
                 {/* <div className="Donate_content">
 

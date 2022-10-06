@@ -12,19 +12,29 @@ export default function Requisites() {
             },
             {
                 id: 1,
-                title: 'Swedbank',
-                value: '40008316962',
-            },
+                title: 'Отримувач',
+                value: 'Нiконоров Антон Сергiйович',
+            }, 
             {
                 id: 2,
-                title: 'IBAN',
-                value: 'LV13HABA0551053065088',
-            },
+                title: 'Індентифікаційний код отримувача',
+                value: '3159419917',
+            }, 
             {
                 id: 3,
-                title: 'Призначення',
-                value: 'Пожертвування',
-            },
+                title: 'Рахунок отримувача',
+                value: 'IBAN UA87320478000002620413103026',
+            }, 
+            {
+                id: 4,
+                title: 'Призначення платежу',
+                value: 'субрахунку - 26204131063026.400101.980 Пожертвування',
+            }, 
+            {
+                id: 5,
+                title: 'Номер карты',
+                value: '4966 8046 0227 3616',
+            }, 
         ],
         [
             {
@@ -50,7 +60,27 @@ export default function Requisites() {
                 title: 'ETH',
                 value: '0xd74959d40252c936Ef377ED6A7D609A0074Ceeea',
             }, 
-        ]
+        ],
+        [
+            {
+                tabTitle: 'Реквізити рахунку EU'
+            },
+            {
+                id: 1,
+                title: 'Swedbank',
+                value: '40008316962',
+            },
+            {
+                id: 2,
+                title: 'IBAN',
+                value: 'LV13HABA0551053065088',
+            },
+            {
+                id: 3,
+                title: 'Призначення',
+                value: 'Пожертвування',
+            },
+        ],
     ]
 
     let [tabs, settabs] = useState([])
@@ -87,16 +117,16 @@ export default function Requisites() {
                 color: '#000',
             },
             '& .MuiButtonBase-root': {
-                maxWidth: 'fit-content',
+                maxWidth: '30%',
                 padding: '0',
                 fontFamily: 'Montserrat',
                 fontStyle: 'normal',
                 fontWeight: 700,
-                fontSize: '1.3541666667vw',
+                fontSize: '1.0541666667vw',
                 lineHeight: '185.6%',
                 letterSpacing: '0.19em',
                 color: '#fff',
-                whiteSpace: 'nowrap',
+                whiteSpace: 'wrap',
             }
         }
         :
@@ -121,8 +151,7 @@ export default function Requisites() {
                 borderBottom: '1px solid #000'
             },
             '& .MuiButtonBase-root': {
-                maxWidth: 'fit-content',
-                minHeight: 'auto',
+                maxWidth: '30%',
                 padding: '0',
                 fontFamily: 'Montserrat',
                 fontStyle: 'normal',
@@ -131,7 +160,7 @@ export default function Requisites() {
                 lineHeight: '185.6%',
                 letterSpacing: '0.19em',
                 color: '#fff',
-                whiteSpace: 'nowrap',
+                whiteSpace: 'wrap',
             }
         }
 

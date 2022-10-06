@@ -22,7 +22,7 @@ export default function CausesCard({ cause }) {
                 </Link>
             </div>
             <div className="Causes_card_content">
-                <h4>{cause.title}</h4>
+                <h4>{(window.innerWidth > 500) ? getCuttedString(cause.title, 73) : getCuttedString(cause.title, 35)}</h4>
                 <div className="text">
                     <p>{getCuttedString(cause.text, 130)}</p>
                 </div>

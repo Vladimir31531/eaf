@@ -53,7 +53,7 @@ export default function Events({ selectedEvents }) {
             '& .MuiPaginationItem-root.MuiPaginationItem-page': {
                 width: '2.0833333333vw',
                 height: '2.0833333333vw',
-                backgroundColor: '#B1B2B3',
+                backgroundColor: '#fff',
                 borderRadius: '50%',
                 fontFamily: 'Montserrat',
                 fontStyle: 'normal',
@@ -61,14 +61,14 @@ export default function Events({ selectedEvents }) {
                 fontSize: '1.0416666667vw',
                 lineHeight: '1.25vw',
                 textAlign: 'center',
-                color: '#FFFFFF',
+                color: '#323232',
                 /* margin: '0 0.27778vw', */
                 cursor: 'pointer',
                 transition: '0.3s',
             },
 
             '& .MuiPaginationItem-root.MuiPaginationItem-page.Mui-selected': {
-                backgroundColor: '#0AABC1',
+                backgroundColor: '#cc9955',
                 color: '#fff',
             },
             '& .MuiPaginationItem-root.MuiPaginationItem-previousNext': {
@@ -94,7 +94,7 @@ export default function Events({ selectedEvents }) {
             '& .MuiPaginationItem-root.MuiPaginationItem-page': {
                 width: '8.0833333333vw',
                 height: '8.0833333333vw',
-                backgroundColor: '#B1B2B3',
+                backgroundColor: '#fff',
                 borderRadius: '50%',
                 fontFamily: 'Montserrat',
                 fontStyle: 'normal',
@@ -102,14 +102,14 @@ export default function Events({ selectedEvents }) {
                 fontSize: '3.0416666667vw',
                 lineHeight: '3.25vw',
                 textAlign: 'center',
-                color: '#FFFFFF',
+                color: '#323232',
                 /* margin: '0 0.27778vw', */
                 cursor: 'pointer',
                 transition: '0.3s',
             },
 
             '& .MuiPaginationItem-root.MuiPaginationItem-page.Mui-selected': {
-                backgroundColor: '#0AABC1',
+                backgroundColor: '#cc9955',
                 color: '#fff',
             },
             '& .MuiPaginationItem-root.MuiPaginationItem-previousNext': {

@@ -33,13 +33,14 @@
 
     @include flex(flex, column, nowrap, flex-start, flex-start, unset);
 
-    h4 {
+    &>h4 {
+        height: 95px*$vw;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 22px*$vw;
-        line-height: 27px*$vw;
-        color: #323232;
+        line-height: 32px*$vw;
+        color: #cc9955;
         margin-bottom: 12px*$vw;
     }
     .text {
@@ -158,6 +159,7 @@
         padding: 0 13px*$TELvw*0.6 36px*$TELvw*0.6 13px*$TELvw*0.6;
 
         h4 {
+            height: 50px*$TELvw;
             font-size: 22px*$TELvw*0.6;
             line-height: 27px*$TELvw*0.6;
             margin-bottom: 12px*$TELvw*0.6;
@@ -204,8 +206,12 @@
         width: 100%;
         padding: 25px*$TELvw*0.6 13px*$TELvw*0.6;
         border-top: 1px solid #BFBFBF;
+        flex-wrap: wrap;
 
         .item {
+            &:first-child {
+                margin-right: 10px*$TELvw;
+            }
 
             .left {
                 font-size: 18px*$TELvw*0.6;
