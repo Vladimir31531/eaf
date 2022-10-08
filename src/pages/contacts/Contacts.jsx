@@ -68,7 +68,9 @@ export default function Contacts() {
                                     </div>
                                     <span>Адреса</span>
                                 </div>
-                                <span>{mainInfo.address}</span>
+                                {mainInfo.address.map((address) => {
+                                    return <span key={address}>{address}</span>
+                                })}
                             </div>
 
                             <div className="contacts_socials">

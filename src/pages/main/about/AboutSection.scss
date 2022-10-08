@@ -122,7 +122,7 @@
     .AboutSection_content {
         width: 100%;
 
-        h4 {
+        h4 { 
             font-size: 34px*$TELvw*0.5;
             line-height: 41px*$TELvw*0.5;
             margin-bottom: 15px*$TELvw*0.5;
@@ -134,9 +134,9 @@
         }
         .text {
             p {
-                font-size: 18px*$TELvw*0.5;
-                line-height: 28px*$TELvw*0.5;
-                margin-bottom: 25px*$TELvw*0.5;
+                font-size: 18px*$TELvw*0.8;
+                line-height: 28px*$TELvw*0.8;
+                margin-bottom: 25px*$TELvw*0.8;
             }
         }
     }

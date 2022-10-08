@@ -330,9 +330,23 @@
                     line-height: 39px*$TELvw*0.5;
                 }
             }
-            span {
+            &>a span,
+            &>span {
                 font-size: 20px*$TELvw*0.5;
                 line-height: 24px*$TELvw*0.5;
+                margin-bottom: 5px*$TELvw;
+            }
+            &>span {
+                padding-left: 10px*$TELvw;
+                position: relative;
+
+                &::before {
+                    content: ' \2022';
+                    font-size: 20px*$TELvw;
+                    position: absolute;
+                    left: 0;
+                    top: -2px*$TELvw;
+                }
             }
         }
     }
