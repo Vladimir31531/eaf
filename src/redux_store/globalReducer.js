@@ -328,86 +328,95 @@ export const globalReducer = createSlice({
         events: [
             {
                 id: 1,
-                eventStart: 1665668783000, // Время начала события
-                eventEnd: 1665668783000, // Время окончания события
-                title: 'Повертаємо дитинство, яке вiдiбрала вiйна',
-                excerpt: 'Благодійний захід фонду #StandWithUkraine - SUN(Sustainable Ukraine Now): повертаємо дитинство, яке відібрала війна 13 жовтня у передмісті Львова, на території комплексу Edem Resort Medical & SPA, відбудеться благодійний захід під назвою SUN(Sustainable Ukraine Now) міжнародного фонду# Stand WithUkraine.',
-                mainText: 'Благодійний захід фонду #StandWithUkraine - SUN(Sustainable Ukraine Now): повертаємо дитинство, яке відібрала війна 13 жовтня у передмісті Львова, на території комплексу Edem Resort Medical & SPA, відбудеться благодійний захід під назвою SUN(Sustainable Ukraine Now) міжнародного фонду# Stand WithUkraine. Головна мета заходу - всебічна допомога українським дітям та сім\'ям, що постраждали від війни та потребують допомоги. Також важливим завданням заходу є збір коштів на відбудову школи у Бучі (селище Бузова), яку зни ЩИВ російський агресор. У програмі заходу SUN благодійного фонду# StandWithUkraine заплановані виступи відомих українських артистів: КА, Злата Огневич, гурт ВВ, Wellboy, які виконають свої пісні разом з дітьми. Ведучими заходу стануть Юрій Ткач та Міла Єремєєва. На благодійному вечорі відбудеться аукціон на підтримку фонду# StandWithUkraine.Усі зібрані кошти будуть передані на допомогу дитячим будинкам, дітям - переселенцям з окупованих територій, дітям, що потребують медичного лікування, та малозабезпеченим сім\'ям.« Ми робимо все можливе сьогодні, щоб подарувати дітям щасливе завтра.Цим проектом ми активно підтримуємо благодійний фонд# StandWithUkraine ma збираємо кошти на допомогу нашим дітям, які вимушено втратили дитинство» -     головний організатор заходу SUN Марта Останкова. Нагадаємо, що# StandWithUkraine - це благодійний фонд, що був створений після повномасштабного вторгнення агресора в Україну, щоб допомагати людям, які потребують підтримки.Фонд займається наданням гуманітарної та тактичної допомоги українцям.У постійні плани роботи# StandWithUkraine спільно з серією заходів SUN також входить підтримка київського міського дитячого будинку у Ворзелі, організація розважальних поїздок для дітей, візити до київського притулку для неповнолітніх. Створюємо майбутне наших дітей прямо зараз!',
+                eventStart: 1665256265000, // Время начала события
+                eventEnd: 1665256265000, // Время окончания события
+                title: 'Допомога дому малюток у м.Ворзель, Київської області',
+                excerpt: 'Наш фонд European Assistance Fund взяв на себе зобов’язання, ні дня без добрих справ, та хочемо цей слоган зробити нашим девізом!',
+                mainText: 'Наш фонд European Assistance Fund взяв на себе зобов’язання, ні дня без добрих справ, та хочемо цей слоган зробити нашим девізом! Сьогодні ділимося з вами звітом на запит, який надійшов до нас з дому малюток у м.Ворзель, Київської області.Діти потребували гуманітарної допомоги: продукти, засоби гігієни, канцелярія тощо. Також у них гостро стоїть питання будівництва котельні, так як зима не за горами. Тому наш Фонд за підтримки небайдужих людей та організацій намагатиметься допомогти, адже діти наше майбутнє!',
                 img: 'event1.png',
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
-            }, /*  {
+            },
+            {
                 id: 2,
-                eventStart: 1673209046985,
-                eventEnd: 1673126246985,
-                title: 'Sending humanitarian aid to Kyiv2',
-                excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
-                mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
-                img: 'eventImg.jpg',
+                eventStart: 1665262800000, // Время начала события
+                eventEnd: 1665262800000, // Время окончания события
+                title: 'Будівництво котельні в будинку малюток у м. Ворзель, Київської області',
+                excerpt: 'Як ми вже й казали, основний напрямок програми #StandWithUkraine  – це допомога дітям найважчих категорій.',
+                mainText: 'Як ми вже й казали, основний напрямок програми #StandWithUkraine  – це допомога дітям найважчих категорій. Тому сьогодні ми ділимося з вами невеликим звітом, як наші браві хлопці справляються з будівництвом котельні для будинку малюток у м. Ворзель, Київської обл. Хлопці ми дуже вдячні вам за ваше бажання та прагнення допомагати. Ось що означає командна робота.',
+                img: 'event1.png',
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
-            }, {
+            },
+            {
                 id: 3,
-                eventStart: 1673409046985,
-                eventEnd: 1673416246985,
-                title: 'Sending humanitarian aid to Kyiv3',
-                excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
-                mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
-                img: 'eventImg.jpg',
+                eventStart: 1665256166000, // Время начала события
+                eventEnd: 1665256166000, // Время окончания события
+                title: 'Допомога школі в с. Бузова, Київської області',
+                excerpt: 'Сьогодні ми хочемо розповісти вам про школу в с. Бузова, Київської області. Цей навчальний заклад має трагічну історію, як і багато інших у нашій країні.',
+                mainText: 'Сьогодні ми хочемо розповісти вам про школу в с. Бузова, Київської області. Цей навчальний заклад має трагічну історію, як і багато інших у нашій країні.Школа потрапила під обстріл російської армії та потребує відновлення.Наш фонд докладає максимум зусиль для допомоги у цій непростій ситуації.Тому просимо приєднатися всіх бажаючих!Разом ми сила!Перемога буде за нами!',
+                img: 'event1.png',
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
-            }, {
+            },
+            {
                 id: 4,
-                eventStart: 1673309046985,
-                eventEnd: 1673316246985,
-                title: 'Sending humanitarian aid to Kyiv4',
-                excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
-                mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
-                img: 'eventImg.jpg',
+                eventStart: 1665256166000, // Время начала события
+                eventEnd: 1665256166000, // Время окончания события
+                title: 'Запит на обладнання бомбосховища від Тернопільської спеціальної загальноосвітньої школи',
+                excerpt: 'Нещодавно до нас надійшов запит від Тернопільської спеціальної загальноосвітньої школи, де навчаються діти з особливими освітніми потребами. Завдання стояло не просто обладнати бомбосховище для цих діток, а створити необхідну атмосферу і умови для навчання.',
+                mainText: 'Нещодавно до нас надійшов запит від Тернопільської спеціальної загальноосвітньої школи, де навчаються діти з особливими освітніми потребами. Завдання стояло не просто обладнати бомбосховище для цих діток, а створити необхідну атмосферу і умови для навчання. Але один із важливих критеріїв був дотримання санітарних та естетичних норм, оскільки ці дітки потребують особливого догляду. Наша команда докладає максимальних зусиль, щоб вирішити це нелегке завдання і дати цим діткам безпеку і комфорт, не дивлячись на ситуацію, що відбувається навколо.Адже всі діти заслуговують лише на найкраще і на гарну долю.',
+                img: 'event1.png',
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
-            }, {
+            },
+            {
                 id: 5,
-                eventStart: 1673509046985,
-                eventEnd: 1673516246985,
-                title: 'Sending humanitarian aid to Kyi5',
-                excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
-                mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
-                img: 'eventImg.jpg',
+                eventStart: 1665256166000, // Время начала события
+                eventEnd: 1665256166000, // Время окончания события
+                title: 'Відвідали табір для біженців у м. Серрес, Греція',
+                excerpt: 'За підтримки Димитріадіса Димитріос, Консульства України в Салоніках та Богдана Каричківського - European Assistance Fund та його програма Stand With Ukraine, волонтери якої відвідали табір для біженців з України у місті Серрес, Греція.',
+                mainText: 'За підтримки Димитріадіса Димитріос, Консульства України в Салоніках та Богдана Каричківського - European Assistance Fund та його програма Stand With Ukraine, волонтери якої відвідали табір для біженців з України у місті Серрес, Греція. Там перебувають понад 100 українців, із них 45 дітей. Надали продукти харчування, предмети особистої гігієни. Провели первинну консультацію з міграційних питань для переселенців. Друзі як ви бачите в наших постах, рука поміччі не має межі ми намагаємося дотягнутися до кожного з вас. Тому ми завжди говоримо, що тільки разом, спільними силами ми можемо змінити цей світ на краще.',
+                img: 'event1.png',
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
-            }, {
+            },
+            {
                 id: 6,
-                eventStart: 1673609046985,
-                eventEnd: 1673616246985,
-                title: 'Sending humanitarian aid to Kyiv6',
-                excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
-                mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
-                img: 'eventImg.jpg',
+                eventStart: 1665256166000, // Время начала события
+                eventEnd: 1665256166000, // Время окончания события
+                title: 'Організація свята для дітей із неблагополучних сімей',
+                excerpt: 'Влаштувати це свято для дітей була справжня радість для працівників нашого Фонду. Бачити їх посмішки наша з вами нагорода. Діток розважали аніматори різноманітними конкурсами та іграми.',
+                mainText: 'Влаштувати це свято для дітей була справжня радість для працівників нашого Фонду. Бачити їх посмішки наша з вами нагорода. Діток розважали аніматори різноманітними конкурсами та іграми. Малечі був проведений майстер клас по малюванню. А в кінці кожен отримав свій подарунок, за це також варто окремо подякувати нашим партнерам Flo. Для того аби провести більше таких заходів нам безумовно не впоратись без вашої підтримки, кожне пожертвування 5,10,50 гривень дуже важливі у такій великій добрій справі. Долучайтесь і Ви, ніхто не має відбирати дитинство у таких прекрасних діток. Реквізити ви можете знайти на нашому сайті. Дякуємо кожному за підтримку!',
+                img: 'event1.png',
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
-            }, {
+            },
+            {
                 id: 7,
-                eventStart: 1673609046985,
-                eventEnd: 1673616246985,
-                title: 'Sending humanitarian aid to Kyiv7',
-                excerpt: 'We plan to send humanitarian aid packages to people who have been affected by the bombing.',
-                mainText: 'We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. We plan to send humanitarian aid packages to people who have been affected by the bombing. ',
-                img: 'eventImg.jpg',
+                eventStart: 1665256166000, // Время начала события
+                eventEnd: 1665256166000, // Время окончания события
+                title: 'Повернення сім\'ї з Миколаєва з Греції додому',
+                excerpt: 'Ця довга та важка історія про сім\'ю з Миколаєва. Жінка з 2 дітьми та мамою - інвалідом змушена була виїхати з Миколаєва, оскільки російські війська розбомбили їхню домiвку.',
+                mainText: 'Ця довга та важка історія про сім\'ю з Миколаєва.Жінка з 2 дітьми та мамою - інвалідом змушена була виїхати з Миколаєва, оскільки російські війська розбомбили їхню домiвку.Після тривалого та тяжкого перебування у таборі вони вирішили повернутися до України, але фінансова можливість та мовний бар’ єр стали на дорозі у цієї сім’ ї.Поки вони не натрапили на наш Фонд.Тож завдяки вам, друзі, зборам та нашим волонтерам ми зробили все, щоб відправити цих людей додому, адже де б ти не був - вдома завжди краще. Не будьте байдужими, долучайтесь до наших програм з допомоги!Разом ми зможемо набагато більше!',
+                img: 'event1.png',
                 map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72724552054!2d30.392265859331747!3d50.40216982544925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2s!4v1663012520608!5m2!1sru!2s" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
-            }, */
+            },
         ],
         // Массив для блока со статистикой
         stats: [
-            /* {
+            {
                 id: 1,
-                title: 'Happy People',
-                value: '1350 +',
+                title: 'Грошова підтримка',
+                icon: 'moneySupport_icon.svg',
+                link: '/',
             },
             {
                 id: 2,
-                title: 'Dedicated Volunteers',
-                value: '180 +',
+                title: 'Інформаційна підтримка',
+                icon: 'infoSupport_icon.svg',
+                link: '/',
             },
             {
                 id: 3,
-                title: 'Implemented Сompanies',
-                value: '370 +',
-            }, */
+                title: 'Партнерство та співробітництво',
+                icon: 'partnership_icon.svg',
+                link: '/',
+            },
         ],
         // Массив со всеми донатами
         causes: [
@@ -517,7 +526,7 @@ export const globalReducer = createSlice({
                 ],
             }, {
                 id: 3,
-                img: 'supportInEurope.jpg',
+                img: 'IT.jpg',
                 title: 'Забезпечення розширення освітніх можливостей та доступності інформаційних технологій',
                 text: 'Освіта - основа розвитку особистості, суспільства, нації та держави. Вона є визначальним чинником політичної, соціально-економічної, культурної та наукової життєдіяльності суспільства. Освіта відтворює і нарощує інтелектуальний, духовний та економічний потенціал суспільства.',
                 goal: 16500,

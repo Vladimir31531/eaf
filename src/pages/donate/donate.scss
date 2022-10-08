@@ -28,6 +28,14 @@
         margin-bottom: 50px*$vw;
     }
 
+    .donate_inner {
+        width: 100%;
+
+        @include flex(flex, row, nowrap, flex-start, flex-start, unset);
+
+        gap: 80px*$vw;
+    }
+
     .forms_btns {
         @include flex(flex, column, nowrap, flex-start, center, unset);
         gap: 20px*$vw;
@@ -35,9 +43,44 @@
         a {
             width: 290px*$vw;
 
-            .btn1 {
-                width: 100%;
-                height: 63px*$vw;
+            .form_link {
+                width: 816px*$vw;
+                height: 179px*$vw;
+                padding: 15px*$vw;
+                background: #E59E45;
+                position: relative;
+
+                @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+                .title {
+                    max-width: 80%;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px*$vw*0.8;
+                    line-height: 39px*$vw*0.8;
+                    text-transform: uppercase;
+                    color: #000000;
+                    margin-bottom: 30px*$vw;
+                }
+                .text {
+                    max-width: 80%;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px*$vw;
+                    line-height: 20px*$vw;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+                .arrow {
+                    width: 75px*$vw;
+                    height: 22px*$vw;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
     }
@@ -238,18 +281,61 @@
             text-align: center;
         }
 
+        .donate_inner {
+            width: 100%;
+
+            @include flex(flex, column, nowrap, flex-start, center, unset);
+
+            gap: 80px*$vw;
+        }
+
         .forms_btns {
+            width: 100%;
             @include flex(flex, column, nowrap, flex-start, center, unset);
             gap: 20px*$TELvw*0.6;
 
             a {
-                width: 290px*$TELvw*0.7;
+                width: 100%;
 
-                .btn1 {
+                .form_link {
                     width: 100%;
-                    height: 63px*$TELvw*0.6;
-                    font-size: 10px*$TELvw;
-                    line-height: 12px*$TELvw;
+                    height: unset;
+                    padding: 15px*$TELvw*0.7;
+                    background: #E59E45;
+                    position: relative;
+
+                    @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+                    .title {
+                        max-width: 80%;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px*$TELvw*0.7*0.8;
+                        line-height: 39px*$TELvw*0.7*0.8;
+                        text-transform: uppercase;
+                        text-align: start;
+                        color: #000000;
+                        margin-bottom: 30px*$vw;
+                    }
+                    .text {
+                        max-width: 80%;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px*$TELvw*0.7;
+                        line-height: 20px*$TELvw*0.7;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                    .arrow {
+                        width: 75px*$TELvw*0.7;
+                        height: 22px*$TELvw*0.7;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
                 }
             }
         }

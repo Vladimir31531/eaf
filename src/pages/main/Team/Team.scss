@@ -45,7 +45,7 @@
     margin-top: 100px*$vw;
     margin-bottom: 21px*$vw;
 
-    @include flex(flex, row, wrap, flex-start, center, unset);
+    @include flex(flex, row, wrap, center, center, unset);
     
     gap: 36px*$vw;
 }

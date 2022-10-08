@@ -28,8 +28,10 @@ export let getDayMonth = (timestamp, str, fullMonth) => {
     let date = new Date(timestamp);
     let data
     if (str == 'num') {
+        console.log(date.getDate())
         data = ((date.getDate() < 10) ? '0' + date.getDate() : date.getDate())
     } else if (str == 'month') {
+        console.log(date.getMonth())
         data = (fullMonth) ? monthNames[date.getMonth()] : monthNames[date.getMonth()].slice(0, 3)
     }
     return data

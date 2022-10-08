@@ -28,8 +28,6 @@ export default function Events({ selectedEvents }) {
         setsortedEvents([...arr])
     }, [selectedEvents])
 
-    console.log(sortedEvents)
-
     // Индекс текущей страницы
     let [currentPage, setcurrentPage] = useState(1)
     // Количество элементов на страницу

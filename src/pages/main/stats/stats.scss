@@ -8,6 +8,8 @@
     overflow: hidden;
 
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../../../assets/img/StatsBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .Stats_header {
     
@@ -17,7 +19,7 @@
         font-weight: 700;
         font-size: 34px*$vw;
         line-height: 41px*$vw;
-        color: #0AABC1;
+        color: #cc9955;
         margin-bottom: 15px*$vw;
     }
     h3 {
@@ -27,8 +29,17 @@
         font-size: 61px*$vw;
         line-height: 74px*$vw;
         color: #FFFFFF;
-        margin-bottom: 60px*$vw;
+        margin-bottom: 15px*$vw;
     }
+}
+.Stats_header_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px*$vw;
+    line-height: 29px*$vw;
+    color: #C6C6C6;
+    margin-bottom: 50px*$vw;
 }
 .Stats_w {
     width: 100%;
@@ -37,37 +48,51 @@
     .inner {
         width: fit-content;
 
-        @include flex(flex, row, wrap, flex-start, center, unset);
+        @include flex(flex, row, nowrap, flex-start, center, unset);
 
         gap: 60px*$vw;
     }
 }
 .Stats_item {
     min-width: 394px*$vw;
-    background: #0AABC1;
+    height: 252px*$vw;
+    background: #cc9955;
     border-radius: 10px*$vw;
     padding: 42px*$vw 28px*$vw;
 
     @include flex(flex, column, nowrap, flex-start, flex-start, unset);
 
     .num {
-        width: 84px*$vw;
-        height: 84px*$vw;
+        width: 100px*$vw;
+        height: 100px*$vw;
         margin-bottom: 27px*$vw;
-        background-color: rgba(181, 181, 181, 0.6);
+        padding-left: 60px*$vw;
+        background-color: rgba(226, 169, 94, 0.7);
         border-radius: 7px*$vw;
 
-        font-family: 'Montserrat';
+        /* font-family: 'Montserrat';
         font-style: normal;
         font-weight: 900;
         font-size: 48px*$vw;
         line-height: 59px*$vw;
         text-transform: uppercase;
         color: #FFFFFF;
-        white-space: nowrap;
-        padding-left: 40px*$vw;
+        white-space: nowrap; */
         
-        @include flex(flex, row, nowrap, flex-start, center, unset);
+        
+        /* @include flex(flex, row, nowrap, flex-start, center, unset); */
+
+        /* img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        } */
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
     .text {
         font-family: 'Montserrat';
@@ -126,6 +151,11 @@
         position: relative;
         padding: 50px*$TELvw 20px*$TELvw;
     }
+    .Stats_header_text {
+        font-size: 24px*$TELvw*0.5;
+        line-height: 29px*$TELvw*0.5;
+        margin-bottom: 50px*$TELvw*0.5;
+    }
     .Stats_header {
         text-align: center;
         
@@ -154,22 +184,27 @@
         }
     }
     .Stats_item {
-        min-width: 394px*$TELvw*0.5;
+        width: 500px*$TELvw*0.5;
+        height: 150px*$TELvw;
         border-radius: 10px*$TELvw*0.5;
         padding: 42px*$TELvw*0.5 28px*$TELvw*0.5;
 
         .num {
-            width: 84px*$TELvw*0.5;
-            height: 84px*$TELvw*0.5;
-            margin-bottom: 27px*$TELvw*0.5;
+            width: 84px*$TELvw*0.7;
+            height: 84px*$TELvw*0.7;
+            margin-bottom: 27px*$TELvw*0.7;
             background-color: rgba(181, 181, 181, 0.6);
-            border-radius: 7px*$TELvw*0.5;
-            font-size: 48px*$TELvw*0.5;
-            line-height: 59px*$TELvw*0.5;
-            padding-left: 40px*$TELvw*0.5;
+            border-radius: 7px*$TELvw*0.7;
+            font-size: 48px*$TELvw*0.7;
+            line-height: 59px*$TELvw*0.7;
+            padding-left: 0;
+
+            img {
+                margin-left: 40px*$TELvw*0.7;
+            }
         }
         .text {
-            font-size: 22px*$TELvw*0.5;
+            font-size: 22px*$TELvw*0.7;
         }
     }
 

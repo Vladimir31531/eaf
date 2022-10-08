@@ -128,19 +128,47 @@ export default function Donate() {
                         </div>
                     </div>
                 </div> */}
-                <iframe id="donateIframe" src="https://donorbox.org/embed/europeanassistancefund?default_interval=o&enable_auto_scroll=false" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameBorder="0" scrolling="no" width="100%" style={{maxWidth: '423px', minHeight: '600px', minWidth: '250px', maxHeight: 'none!important'}}></iframe>
 
-                <div className="forms_btns">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhIYUK98aMXCa6xzi46Oy-DYqBERT4rFjv8R9GEGFxgjBxtQ/viewform" target="_blank">
-                        <Btn1 text={'Заявка на допомогу'} func={() => { }} />
-                    </a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSezukLw9XSyfp9ifIWBUrk10chm5wtIWNb_TBKsnh1B1LbK5g/viewform" target="_blank">
-                        <Btn1 text={'Анкета для волонтерів'} func={() => { }} />
-                    </a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3bTiVd-YpjddOXzETX4HtaqmrQYdPk4It_xhRrrj6bBXL4Q/viewform" target="_blank">
-                        <Btn1 text={'Заявка на допомогу від дитячого психолога'} func={() => { }} />
-                    </a>
+                <div className="donate_inner">
+                    <iframe id="donateIframe" src="https://donorbox.org/embed/europeanassistancefund?default_interval=o&enable_auto_scroll=false" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameBorder="0" scrolling="no" width="100%" style={{ maxWidth: '423px', minHeight: '600px', minWidth: '250px', maxHeight: 'none!important' }}></iframe>
+
+                    <div className="forms_btns">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhIYUK98aMXCa6xzi46Oy-DYqBERT4rFjv8R9GEGFxgjBxtQ/viewform" target="_blank">
+                            <div className="form_link">
+                                <h3 className="title">Заявка на допомгу</h3>
+                                <div className="text">Ми будемо дуже раді бачити кожного в нашій дружній команді, тому натиснувши кнопку - ви можете заповнити форму для волонтерів та стати одним із нас</div>
+                                <div className="arrow">
+                                    <svg viewBox="0 0 77 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M76.0607 13.0607C76.6464 12.4749 76.6464 11.5251 76.0607 10.9393L66.5147 1.3934C65.9289 0.807611 64.9792 0.807611 64.3934 1.3934C63.8076 1.97919 63.8076 2.92893 64.3934 3.51472L72.8787 12L64.3934 20.4853C63.8076 21.0711 63.8076 22.0208 64.3934 22.6066C64.9792 23.1924 65.9289 23.1924 66.5147 22.6066L76.0607 13.0607ZM0 13.5H75V10.5H0V13.5Z" fill="black" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSezukLw9XSyfp9ifIWBUrk10chm5wtIWNb_TBKsnh1B1LbK5g/viewform" target="_blank">
+                            <div className="form_link">
+                                <h3 className="title">АНКЕТА ДЛЯ ВОЛОНТЕРОВ</h3>
+                                <div className="text">Ми будемо дуже раді бачити кожного в нашій дружній команді, тому натиснувши кнопку - ви можете заповнити форму для волонтерів та стати одним із нас</div>
+                                <div className="arrow">
+                                    <svg viewBox="0 0 77 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M76.0607 13.0607C76.6464 12.4749 76.6464 11.5251 76.0607 10.9393L66.5147 1.3934C65.9289 0.807611 64.9792 0.807611 64.3934 1.3934C63.8076 1.97919 63.8076 2.92893 64.3934 3.51472L72.8787 12L64.3934 20.4853C63.8076 21.0711 63.8076 22.0208 64.3934 22.6066C64.9792 23.1924 65.9289 23.1924 66.5147 22.6066L76.0607 13.0607ZM0 13.5H75V10.5H0V13.5Z" fill="black" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3bTiVd-YpjddOXzETX4HtaqmrQYdPk4It_xhRrrj6bBXL4Q/viewform" target="_blank">
+                            <div className="form_link">
+                                <h3 className="title">Заявка на допомогу від дитячого психолога</h3>
+                                <div className="text">Якщо Ваша дитина потребує психологічної консультації, натиснувши сюди, ви можете заповнити форму для її отримання.</div>
+                                <div className="arrow">
+                                    <svg viewBox="0 0 77 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M76.0607 13.0607C76.6464 12.4749 76.6464 11.5251 76.0607 10.9393L66.5147 1.3934C65.9289 0.807611 64.9792 0.807611 64.3934 1.3934C63.8076 1.97919 63.8076 2.92893 64.3934 3.51472L72.8787 12L64.3934 20.4853C63.8076 21.0711 63.8076 22.0208 64.3934 22.6066C64.9792 23.1924 65.9289 23.1924 66.5147 22.6066L76.0607 13.0607ZM0 13.5H75V10.5H0V13.5Z" fill="black" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+                
             </div>
 
             

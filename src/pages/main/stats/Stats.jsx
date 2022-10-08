@@ -5,6 +5,7 @@ import StatsBg from "../../../assets/img/StatsBg.jpg"
 import { useSelector } from 'react-redux'
 import MuiModal from '../../../components/ui/mui_modal/MuiModal'
 import VolunteerModal from '../../../components/VolunteerModal/VolunteerModal'
+import { Link } from 'react-router-dom'
 
 export default function Stats() {
 
@@ -44,17 +45,22 @@ export default function Stats() {
         return (
             <div className="Stats">
                 <div className="Stats_header">
-                    <h4>our statistics</h4>
-                    <h3>We provide help</h3>
+                    <h4>Допомога</h4>
+                    <h3>Ми надаємо допомогу</h3>
+                    <p className="Stats_header_text">Нижче Ви можете побачити кнопки, натиснув на які зможете допомогти, тим хто цього потребує. Допомога важлива різна. Ви можете допомогти коштами, можете зробити репост, можете стати частиної нашої команди чи стати нашим партнером.</p>
                 </div>
                 <div className="Stats_w">
                     <div className="inner">
                         {stats.map((stat) => {
                             return (
-                                <div key={stat.id} className="Stats_item">
-                                    <span className="num">{stat.value}</span>
-                                    <span className="text">{stat.title}</span>
-                                </div>
+                                <Link to={stat.link}>
+                                    <div key={stat.id} className="Stats_item">
+                                        <span className="num">
+                                            <img src={'./img/' + stat.icon} alt="" />
+                                        </span>
+                                        <span className="text">{stat.title}</span>
+                                    </div>
+                                </Link>
                             )
                         })}
                     </div>

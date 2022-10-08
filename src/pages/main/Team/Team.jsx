@@ -8,7 +8,7 @@ export default function Team() {
             id: 1,
             fio: 'Антон',
             img: 'Anton.JPG',
-            position: 'Должность',
+            position: 'Волонтер',
             social: [
                 {
                     id: 1,
@@ -31,7 +31,7 @@ export default function Team() {
             id: 2,
             fio: 'Лиза',
             img: 'Liza.JPG',
-            position: 'Должность',
+            position: 'Волонтер',
             social: [
                 {
                     id: 1,
@@ -54,7 +54,7 @@ export default function Team() {
             id: 3,
             fio: 'Татьяна',
             img: 'Tatiana.JPG',
-            position: 'Должность',
+            position: 'Волонтер',
             social: [
                 {
                     id: 1,
