@@ -77,6 +77,10 @@
         gap: 40px*$vw;
 
         li {
+            &:nth-child(3),
+            &:nth-child(4) {
+                margin-top: 1px*$vw;
+            }
             span {
                 font-family: 'Montserrat';
                 font-style: normal;

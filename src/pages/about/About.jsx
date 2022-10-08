@@ -7,6 +7,9 @@ import History from './history/History'
 import Mission from './mission/Mission'
 import Btn1 from '../../components/ui/btn1/Btn1'
 
+import registration from "../../assets/img/registration.jpg"
+import statut from "../../assets/img/statut.jpg"
+
 export default function About() {
 
     let breadcrumbsItems = [
@@ -36,6 +39,14 @@ export default function About() {
             <div className="aboutPage_btns">
                 <Btn1 text={'Реєстрація'} func={() => downloadFile("./docs/", 'lemums.pdf')} />
                 <Btn1 text={'Статут Фонду'} func={() => downloadFile("./docs/", 'european_assistance_fonda_statuti.pdf')} />
+            </div>
+            <div className="aboutPage_images">
+                <div className="img">
+                    <img src={registration} alt="" />
+                </div>
+                <div className="img">
+                    <img src={statut} alt="" />
+                </div>
             </div>
             <Stats />
             {(aboutPage.history) && <History history={aboutPage.history} />}

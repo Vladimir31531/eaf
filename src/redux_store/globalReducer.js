@@ -1,7 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
-
 export const globalReducer = createSlice({
     name: 'global',
     initialState: {
@@ -15,7 +13,7 @@ export const globalReducer = createSlice({
             socials: [
                 {
                     social: 'twi',
-                    link: 'https://twitter.com/EuropeanFundEAF',
+                    link: 'https://twitter.com/FundEuropean',
                 },
                 {
                     social: 'fb',
@@ -35,11 +33,11 @@ export const globalReducer = createSlice({
                 },
                 {
                     social: 'wsp',
-                    link: 'https://www.notion.so/WhatsApp-7f1d581ee3364c06b533cdb30d511711',
+                    link: 'https://chat.whatsapp.com/CvDFtMHXOto2I7NXggeRsu',
                 },
                 {
                     social: 'vbr',
-                    link: 'https://www.notion.so/Viber-81f5bd6e462446e8a8b4b1b5262b7de8',
+                    link: 'http://invite.viber.com/?g2=AQA2zbXJT9juFk%2B%2FchzKlehPOjy47Zoi4F%2F1wkmz9rIfjlBTzCzGCVDAVdCvGE01',
                 },
                 /* {
                     social: 'in',
@@ -495,7 +493,7 @@ export const globalReducer = createSlice({
                 ],
             }, {
                 id: 2,
-                img: 'supportInEurope.jpg',
+                img: '1.jpg',
                 title: 'Надання гуманітарної допомоги жертвам війни та стихійних лих',
                 text: 'На жаль, надзвичайні ситуації є частиною нашого повсякденного життя. У світі відбуваються різні трагічні події: війни, стихійні лиха, аварії, пожежі і міжособистісне насильство. Переміщеними можуть бути окремі люди, сім\'ї і цілі спільноти.Люди втрачають будинки, близьких, виявляються відірваними від сім\'ї і звичного оточення або стають свідками насильства, руйнувань і смерті.',
                 goal: 16500,
@@ -547,7 +545,7 @@ export const globalReducer = createSlice({
                 ],
             }, {
                 id: 4,
-                img: 'supportInEurope.jpg',
+                img: 'sport.jpg',
                 title: 'Підтримка організацій спортивних заходів',
                 text: 'Пріоритетним  завданням програми є виховання людини в дусі відповідального ставлення до власного здоров\'я і здоров\'я оточуючих як до найвищої індивідуальної і суспільної цінності. Фізичне виховання як невід\'ємна   складова   освіти забезпечує  можливість  набуття  кожною людиною необхідних науково обгрунтованих знань про здоров\'я і засоби його зміцнення, про шляхи і методи протидії хворобам, про методики досягнення високої працездатності та тривалої творчої активності.',
                 goal: 16500,
@@ -567,7 +565,7 @@ export const globalReducer = createSlice({
                 ],
             }, {
                 id: 4,
-                img: 'supportInEurope.jpg',
+                img: 'nft.jpg',
                 title: 'Надання підтримки проектам NFT',
                 text: 'NFT (Non Fungible Token, невзаємозамінний токен) - різновид криптографічних токенів, кожен з яких унікальний. Це означає, що його не можна підробити, розділити чи поміняти місцями. Метадані таких токенів незмінні.',
                 goal: 16500,

@@ -170,12 +170,17 @@ export default function Requisites() {
         <div className="Requisites">
             <h4>реквізити</h4>
             <h3>Наші реквізити</h3>
-            <div className="Requisites_content">
-                <MuiTabs
-                    tabs={tabs}
-                    tabPanels={tabContents}
-                    TabsSX={TabsSX}
-                />
+            <div className="Requisites_w">
+                <div className="Requisites_content">
+                    <MuiTabs
+                        tabs={tabs}
+                        tabPanels={tabContents}
+                        TabsSX={TabsSX}
+                    />
+                </div>
+                <div className="Requisites_iframe">
+                    <iframe id="donateIframe" src="https://donorbox.org/embed/europeanassistancefund?default_interval=o&enable_auto_scroll=false" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameBorder="0" scrolling="no" width="100%" style={{ maxWidth: '423px', minHeight: '600px', minWidth: '250px', maxHeight: 'none!important' }}></iframe>
+                </div>
             </div>
         </div>
     )

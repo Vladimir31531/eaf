@@ -143,7 +143,7 @@ export default function Donate() {
                 </div>
             </div>
 
-            <script src="https://donorbox.org/widget.js" paypalexpress="false"></script>
+            
         </main>
     )
 }

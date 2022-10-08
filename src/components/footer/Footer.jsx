@@ -119,6 +119,10 @@ export default function Footer() {
         © 2022 EAF is Powered  by 
         <a href="https://wox.academy/it-kompaniya/">WOX-Studio</a>
       </div>
+
+
+
+      <script src="https://donorbox.org/widget.js" paypalexpress="false"></script>
     </footer>
   )
 }
