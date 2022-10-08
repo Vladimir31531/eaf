@@ -6,8 +6,8 @@ export default function Team() {
     let team = [
         {
             id: 1,
-            fio: 'Иванов Иван Иванович',
-            img: 'teamMember1.png',
+            fio: 'Антон',
+            img: 'Anton.JPG',
             position: 'Должность',
             social: [
                 {
@@ -29,8 +29,8 @@ export default function Team() {
         },
         {
             id: 2,
-            fio: 'Иванов Иван Иванович',
-            img: 'teamMember2.png',
+            fio: 'Лиза',
+            img: 'Liza.JPG',
             position: 'Должность',
             social: [
                 {
@@ -52,31 +52,8 @@ export default function Team() {
         },
         {
             id: 3,
-            fio: 'Иванов Иван Иванович',
-            img: 'teamMember3.png',
-            position: 'Должность',
-            social: [
-                {
-                    id: 1,
-                    slug: 'twr',
-                    link: 'https://twitter.com/',
-                },
-                {
-                    id: 2,
-                    slug: 'inst',
-                    link: 'https://www.instagram.com/',
-                },
-                {
-                    id: 3,
-                    slug: 'fb',
-                    link: 'https://facebook.com/',
-                },
-            ]
-        },
-        {
-            id: 4,
-            fio: 'Иванов Иван Иванович',
-            img: 'teamMember4.png',
+            fio: 'Татьяна',
+            img: 'Tatiana.JPG',
             position: 'Должность',
             social: [
                 {
