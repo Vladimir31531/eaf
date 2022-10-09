@@ -5,6 +5,7 @@
     width: 100%;
     padding: 0 300px*$vw;
     position: relative;
+    margin-bottom: 100px*$vw;
 
     @include flex(flex, column, nowrap, flex-start, center, unset);
 
@@ -14,7 +15,7 @@
         font-weight: 700;
         font-size: 34px*$vw;
         line-height: 41px*$vw;
-        color: #0AABC1;
+        color: #cc9955;
         margin-bottom: 15px*$vw;
     }
     &>h3 {
@@ -23,7 +24,7 @@
         font-weight: 700;
         font-size: 61px*$vw;
         line-height: 74px*$vw;
-        color: #323232;
+        color: #fff;
         margin-bottom: 50px*$vw;
     }
 }
@@ -64,6 +65,7 @@
         width: 100%;
         padding: 0 20px*$TELvw;
         position: relative;
+        margin-bottom: 42px*$TELvw;
 
         &>h4 {
             font-size: 34px*$TELvw*0.5;

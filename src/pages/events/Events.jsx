@@ -37,7 +37,8 @@ export default function Events({ selectedEvents }) {
 
     // Рассчитывает количество страниц
     useEffect(() => {
-        setpagesCount(Math.ceil(getUpcomingEvents(events, 'eventStart').length / ItemsPerPage))
+        let arr = (selectedEvents == 'future') ? [...getUpcomingEvents(events, 'eventStart')] : (selectedEvents == 'past') ? [...getPastEvents(events, 'eventStart')] : events
+        setpagesCount(Math.ceil(arr.length / ItemsPerPage))
     }, [events])
 
     let [paginationItems] = useCurrentPagePosts(currentPage, ItemsPerPage, sortedEvents)

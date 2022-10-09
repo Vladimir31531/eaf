@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useLocation } from 'react-router'
 import MuiTabs from '../../../components/ui/mui_tabs/MuiTabs'
 import "./Requisites.scss"
 import RequisitesCard from './RequisitesCard/RequisitesCard'
@@ -102,7 +103,7 @@ export default function Requisites() {
         {
             '& .MuiTabs-flexContainer': {
                 justifyContent: 'center',
-                gap: '50px'
+                gap: '20px'
             },
             '& .MuiTabs-indicator': {
                 backgroundColor: 'transparent',
@@ -117,7 +118,7 @@ export default function Requisites() {
                 color: '#000',
             },
             '& .MuiButtonBase-root': {
-                maxWidth: '30%',
+                maxWidth: '32%',
                 padding: '0',
                 fontFamily: 'Montserrat',
                 fontStyle: 'normal',
@@ -135,7 +136,7 @@ export default function Requisites() {
 
             '& .MuiTabs-flexContainer': {
                 justifyContent: 'center',
-                gap: '20px'
+                gap: '10px'
             },
             '& .MuiTabs-indicator': {
                 backgroundColor: 'transparent',
@@ -151,7 +152,7 @@ export default function Requisites() {
                 borderBottom: '1px solid #000'
             },
             '& .MuiButtonBase-root': {
-                maxWidth: '30%',
+                maxWidth: '32%',
                 padding: '0',
                 fontFamily: 'Montserrat',
                 fontStyle: 'normal',
@@ -164,11 +165,11 @@ export default function Requisites() {
             }
         }
 
-
+    let location = useLocation()
 
     return (
         <div className="Requisites">
-            <h4>реквізити</h4>
+            <h4>підтримати</h4>
             <h3>Наші реквізити</h3>
             <div className="Requisites_w">
                 <div className="Requisites_content">
@@ -178,9 +179,15 @@ export default function Requisites() {
                         TabsSX={TabsSX}
                     />
                 </div>
-                <div className="Requisites_iframe">
-                    <iframe id="donateIframe" src="https://donorbox.org/embed/europeanassistancefund?default_interval=o&enable_auto_scroll=false" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameBorder="0" scrolling="no" width="100%" style={{ maxWidth: '423px', minHeight: '600px', minWidth: '250px', maxHeight: 'none!important' }}></iframe>
-                </div>
+
+                {(location.pathname !== '/donate')
+                    &&
+                    <div className="Requisites_iframe">
+                        <iframe id="donateIframe" src="https://donorbox.org/embed/europeanassistancefund?default_interval=o&enable_auto_scroll=false" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameBorder="0" scrolling="no" width="100%" style={{ maxWidth: '423px', minHeight: '600px', minWidth: '250px', maxHeight: 'none!important' }}></iframe>
+                    </div>
+                }
+
+                
             </div>
         </div>
     )

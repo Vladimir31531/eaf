@@ -52,7 +52,7 @@ export default function EventsCard({small, event}) {
                             </span>
                             <span className="text">{getTimePeriod(event.eventStart, event.eventEnd)}</span>
                         </div>
-                        <h5>{(window.innerWidth > 500) ? getCuttedString(event.title, 73) : getCuttedString(event.title, 35)}</h5>
+                        <h5>{(window.innerWidth > 500) ? getCuttedString(event.title, 55) : getCuttedString(event.title, 35)}</h5>
                         <div className="text">
                             <p>{getCuttedString(event.mainText, ((location.pathname == '/events' && window.innerWidth <= 500) ? 68 : 190))}</p>
                         </div>

@@ -5,6 +5,7 @@ import MySelect from '../../components/ui/MySelect/MySelect'
 import { useSelector } from 'react-redux'
 import { getCuttedString } from '../../functions/helpers'
 import Btn1 from '../../components/ui/btn1/Btn1'
+import Requisites from '../main/Requisites/Requisites'
 
 export default function Donate() {
 
@@ -81,8 +82,8 @@ export default function Donate() {
 
             <div className="Donate_w">
                 <div className="Causes_bgText">Підтримати</div>
-                <h4>Роби добро</h4>
-                <h3>Допоможіть людям</h3>
+                <h4>Підтримати</h4>
+                <h3>Підтримати нас фінансово</h3>
                 {/* <div className="Donate_content">
 
                     <form id="donate_form" onSubmit={(e) => handleSubmit(e)}></form>
@@ -167,7 +168,10 @@ export default function Donate() {
                             </div>
                         </a>
                     </div>
+
                 </div>
+
+                <Requisites />
                 
             </div>
 

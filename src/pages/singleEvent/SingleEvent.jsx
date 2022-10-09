@@ -76,6 +76,16 @@ export default function SingleEvent() {
                         <p>{currEvent.mainText}</p>
                     </div>
 
+                    <div className="SingleEvent_video">
+                        {currEvent.videos.map((video) => {
+                            return (
+                                <video key={video} controls="controls">
+                                    <source src={'../img/' + video}/>
+                                </video>
+                            )
+                        })}
+                    </div>
+
                     <h2>Місце події</h2>
 
                     {currEvent.map

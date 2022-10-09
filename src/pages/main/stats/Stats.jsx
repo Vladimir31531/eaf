@@ -54,7 +54,7 @@ export default function Stats() {
                         {stats.map((stat) => {
                             return (
                                 <Link to={stat.link}>
-                                    <div key={stat.id} className="Stats_item">
+                                    <div key={stat.link} className="Stats_item">
                                         <span className="num">
                                             <img src={'./img/' + stat.icon} alt="" />
                                         </span>
