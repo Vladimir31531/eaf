@@ -121,8 +121,8 @@ export const globalReducer = createSlice({
                 id: 1,
                 img: 'newsIMG1.PNG',
                 author: {
-                    avatar: 'authorAvatar.png',
-                    Name: 'John Omnik',
+                    avatar: 'Tatiana.JPG',
+                    Name: 'Татьяна',
                 },
                 title: 'Британська благодійна організація має намір встановити світовий рекорд за кількістю зданої крові за один день.',
                 newDate: new Date('2022-10-07'),
@@ -145,8 +145,8 @@ export const globalReducer = createSlice({
                 id: 2,
                 img: 'newsIMG2.PNG',
                 author: {
-                    avatar: 'authorAvatar.png',
-                    Name: 'John Omnik',
+                    avatar: 'Tatiana.JPG',
+                    Name: 'Татьяна',
                 },
                 title: 'LEGO Foundation виділяє 13,4 млн доларів на освітні програми в Україні',
                 newDate: new Date('2022-10-07'),
@@ -174,8 +174,8 @@ export const globalReducer = createSlice({
                 id: 3,
                 img: 'newsIMG3.jpg',
                 author: {
-                    avatar: 'authorAvatar.png',
-                    Name: 'John Omnik',
+                    avatar: 'Tatiana.JPG',
+                    Name: 'Татьяна',
                 },
                 title: 'Топ-5 людей у світі, які жертвують найбільше коштів на благодійність',
                 newDate: new Date('2022-10-07'),
@@ -223,8 +223,8 @@ export const globalReducer = createSlice({
                 id: 4,
                 img: 'newsIMG4.jpg',
                 author: {
-                    avatar: 'authorAvatar.png',
-                    Name: 'John Omnik',
+                    avatar: 'Tatiana.JPG',
+                    Name: 'Татьяна',
                 },
                 title: 'Україну з першого дня війни до 10 червня покинули 4,8 мільйона осіб.',
                 newDate: new Date('2022-10-07'),
