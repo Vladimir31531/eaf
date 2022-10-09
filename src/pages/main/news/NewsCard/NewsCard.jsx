@@ -21,7 +21,7 @@ export default function NewsCard({ item }) {
                 </div>
                 <h4 className="title">{getCuttedString(item.title, 70)}</h4>
                 <Link to={'/news/' + item.id}>
-                    <Btn2 text={'Read More'} func={() => { }} />
+                    <Btn2 text={'Читати далі'} func={() => { }} />
                 </Link>
             </div>
             <div className="News_card_bottom">

@@ -72,7 +72,7 @@ export default function Stats() {
                             <line x1="28" y1="14" x2="1" y2="14" stroke="white" strokeWidth="2" strokeLinecap="round" />
                         </svg>
                     </div>
-                    <span>Become a Volunteer</span>
+                    <span>Стати волонтером</span>
                 </button>
                 <MuiModal
                     content={<VolunteerModal setshowModal={setshowModal} />}

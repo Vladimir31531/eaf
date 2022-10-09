@@ -37,18 +37,18 @@ export default function VolunteerModal({ setshowModal }) {
                 <img src={bg} alt="" />
             </div>
             <div className="VolunteerModal_content">
-                <h3 className="title">Become a Volunteer</h3>
+                <h3 className="title">Стати волонтером</h3>
 
                 {(showAlert)
                     ?
-                    <div className="alert">your message has been successfully sent</div>
+                    <div className="alert">ваше повідомлення успішно надіслано</div>
                     :
                     <form onSubmit={(e) => handleSubmit(e)}>
-                        <input type="text" name="name" placeholder="Name" />
-                        <input type="text" name="phone" placeholder="Phone" />
+                        <input type="text" name="name" placeholder="Ім'я" />
+                        <input type="text" name="phone" placeholder="Телефон" />
                         <input type="text" name="email" placeholder="E-mail" />
-                        <textarea name="message" placeholder="Message"></textarea>
-                        <button type="submit">Send</button>
+                        <textarea name="message" placeholder="Повідомлення"></textarea>
+                        <button type="submit">Надіслати</button>
                     </form>
                 }
             </div>
