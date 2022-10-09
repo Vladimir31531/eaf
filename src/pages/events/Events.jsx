@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import Breadcrumbs from '../../components/ui/breadcrumbs/Breadcrumbs'
 import MuiPagination from '../../components/ui/pagination/Pagination'
-import { getPastEvents, getUpcomingEvents, useCurrentPagePosts } from '../../functions/helpers'
+import { getLatestNews, getPastEvents, getUpcomingEvents, useCurrentPagePosts } from '../../functions/helpers'
 import EventsCard from '../main/events/eventsCard/EventsCard'
 import "./events.scss"
 
@@ -24,7 +24,7 @@ export default function Events({ selectedEvents }) {
     let [sortedEvents, setsortedEvents] = useState((selectedEvents == 'future') ? [...getUpcomingEvents(events, 'eventStart')] : (selectedEvents == 'past') ? [...getPastEvents(events, 'eventStart')] : events)
 
     useEffect(() => {
-        let arr = (selectedEvents == 'future') ? [...getUpcomingEvents(events, 'eventStart')] : (selectedEvents == 'past') ? [...getPastEvents(events, 'eventStart')] : events
+        let arr = (selectedEvents == 'future') ? [...getUpcomingEvents(events, 'eventStart')] : (selectedEvents == 'past') ? [...getPastEvents(events, 'eventStart')] : [...getLatestNews(events, 'eventStart')]
         setsortedEvents([...arr])
     }, [selectedEvents])
 
@@ -37,7 +37,7 @@ export default function Events({ selectedEvents }) {
 
     // Рассчитывает количество страниц
     useEffect(() => {
-        let arr = (selectedEvents == 'future') ? [...getUpcomingEvents(events, 'eventStart')] : (selectedEvents == 'past') ? [...getPastEvents(events, 'eventStart')] : events
+        let arr = (selectedEvents == 'future') ? [...getUpcomingEvents(events, 'eventStart')] : (selectedEvents == 'past') ? [...getPastEvents(events, 'eventStart')] : [...getLatestNews(events, 'eventStart')]
         setpagesCount(Math.ceil(arr.length / ItemsPerPage))
     }, [events])
 

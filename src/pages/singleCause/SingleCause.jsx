@@ -86,7 +86,7 @@ export default function SingleCause({ setsearchQuery }) {
                     </div>
                     <h1>{currCause.title}</h1>
                     <div className="SingleCause_content_details">
-                        <div className="left">
+                        {/* <div className="left">
                             <div className="item">
                                 <span className="left">Ціль:</span>
                                 <span className="right">${currCause.goal}</span>
@@ -103,7 +103,7 @@ export default function SingleCause({ setsearchQuery }) {
                                 <span className="left">Донори:</span>
                                 <span className="right">${currCause.donators}</span>
                             </div>
-                        </div>
+                        </div> */}
 
                         <Link to={'/donate'}>
                             <Btn1
