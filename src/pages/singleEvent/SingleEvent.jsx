@@ -38,7 +38,7 @@ export default function SingleEvent() {
 
             <div className="SingleEvent">
                 <div className="SingleEvent_img">
-                    <img src={'../img/' + currEvent.img} alt="" />
+                    <img src={'../img/' + currEvent.bigImg} alt="" />
 
                     <div className="SingleEvent_timer_w">
                         <Timer
